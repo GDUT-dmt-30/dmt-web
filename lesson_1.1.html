@@ -1,0 +1,1240 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>大一上学期</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- css files -->
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /> -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="js/gooey/gooey.min.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- /css files -->
+
+
+	<!-- js files -->
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+	<!-- js for gallery -->
+	<script src="js/darkbox.js"></script>
+	<!-- /js for gallery -->
+
+	<!-- /js for back to top -->
+	<!-- js for nav-smooth scroll -->
+	<script src="js/modernizr.custom.26633.js"></script>
+
+	<!-- 固定导航栏 -->
+	<script src="js/stickUp.js"></script>
+
+	<!-- resize监听元素 -->
+	<script src="js/resize.js"></script>
+
+	<!-- gittalk 插件 -->
+	<link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js"></script>
+
+	<!-- 右下角插件脚本 -->
+	<script src="js/gooey/gooey.min.js"></script>
+
+
+	<!-- 滚动插件 -->
+	<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdn.bootcss.com/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+	<!-- 按钮弹出插件 -->
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.min.js"></script>
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.ui.min.js"></script>
+	<script src="js/quttons/Quttons.js"></script>
+
+	<!-- 路径弹窗 -->
+	<script src="https://cdn.bootcss.com/cta.js/0.3.2/cta.min.js"></script>
+
+	<!-- three.js 背景 -->
+	<script src="https://cdn.bootcss.com/three.js/71/three.min.js"></script>
+
+	<script src="js/threejs line/projector.js"></script>
+	<script src="js/threejs line/canvas-renderer.js"></script>
+
+	<script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
+
+	<script src="js/threejs line/3d-lines-animation.js"></script>
+
+	<script src="js/threejs line/color.js"></script>
+
+	<!-- 分享 -->
+	<link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+	<!-- 复制粘贴 -->
+	<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+	<style>
+		body,
+		td,
+		th {
+			font-family: "Microsoft Yahei";
+			background-color: black;
+		}
+
+		.navbar .container {
+
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+
+		}
+
+		.isStuck {
+			left: 0px;
+			width: 100%;
+		}
+
+		@media (min-width: 1080px) {
+			.container {
+				width: 98rem;
+			}
+		}
+
+		section.our-services {
+			/* background: url(images/map/2.jpg) no-repeat; */
+		}
+
+		@media (max-width: 1080px) {
+			.nav>li>a {
+				padding: 10px 5.1rem;
+			}
+		}
+	</style>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!-- 添加音乐 -->
+	<!-- <div id="audioBox" style="display:none">
+		<script type="text/javascript"> 
+			window.onload = function () {
+				var arr = [
+				"audio/南征北战NZBZ-我的天空-(电影《青春派》主题曲).mp3",
+				"audio/筷子兄弟-老男孩-(电影《老男孩》主题曲).mp3",
+					"audio/徐歌阳-追梦赤子心.mp3",
+					"audio/矢野立美-遠き呼び声の彼方へ.mp3",
+					"audio/Ally Kerr-The Sore Feet Song.mp3",
+					"audio/轻音乐-卡农.wma",
+					"audio/可米小子-卡农钢琴曲.mp3",
+					"audio/Richard Clayderman-童年的回忆.mp3",
+					];
+
+				//把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐 
+				var myAudio = new Audio();
+				myAudio.preload = true;
+				myAudio.controls = true;
+				myAudio.src = arr.pop();         //每次读数组最后一个元素 
+				myAudio.addEventListener('ended', playEndedHandler, false);
+				myAudio.play();
+				document.getElementById("audioBox").appendChild(myAudio);
+				myAudio.loop = false;//禁止循环，否则无法触发ended事件 
+				function playEndedHandler() {
+					myAudio.src = arr.pop();
+					myAudio.play();
+					// console.log(arr.length);
+					!arr.length && myAudio.removeEventListener('ended', playEndedHandler, false);//只有一个元素时解除绑定 
+				}
+			} 
+		</script>
+	</div> -->
+	<div class="navbar-wrapper stuckMenu">
+		<div class="container slide">
+			<nav class="navbar navbar-inverse navbar-static-top cl-effect-20">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">大一上学期</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse navbar-right">
+						<ul class="nav navbar-nav">
+							<li><a href="#service"><span data-hover="课程概况">课程概况</span></a></li>
+							<li><a href="#about"><span data-hover="经验之谈">经验之谈</span></a></li>
+							<!-- <li><a href="#testimonials"><span data-hover="鸣谢">鸣谢</span></a></li> -->
+							<li><a href="#contact"><span data-hover="评论">评论</span></a></li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- /About Section -->
+	<!-- Services Section -->
+	<style>
+		.accordion-heading {
+			margin-left: 0%;
+			padding: 0px 0 20px;
+		}
+
+		#features .ac a:hover {
+			color: #A29D26;
+		}
+	</style>
+	<div>
+		<section class="our-services slide" id="service">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slide">大一上学期 - 课程概况</h3>
+				<p class="text-center slide" style="color:white">每一届的情况都有些不同<br>这里收集了2016级的情况</p>
+				<div>
+					<div id="features">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 centered">
+									<!-- ACCORDION -->
+									<div class="navbar accordion ac" id="accordion2">
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_1">专业导论</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_2">素描与色彩</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_3">高等数学（1）</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_4">大学英语（1）</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_5">计算机文化基础</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_6">大学生心理健康教育</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_7" style="padding:inherit;">大学生职业规划与创业教育</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class=" slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_8" style="padding:inherit;">廉洁修身&思想道德修养与法律基础</a>
+												</div>
+											</div>
+
+										</div>
+
+									</div><!-- Accordion -->
+								</div>
+							</div>
+						</div>
+						<!--/ .container -->
+						</h3>
+						<!--/ #features -->
+					</div>
+		</section>
+		</div>
+
+		<section class="about-us" id="lesson_1" style="background:url(images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;padding-bottom: 50%;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">专业导论</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：冯开平 </p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：7-1104 </p>
+
+		</section>
+
+		<section class="about-us" id="lesson_2" style="background:url(images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">素描与色彩</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：吴彩好（一班）党霁星（二班） </p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：5-404（一班）5-507（二班） </p>
+		</section>
+
+		<section class="about-us" id="lesson_3" style="background:url(images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">高等数学（1）</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：邢鸿雁 </p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：7-1204 </p>
+		</section>
+
+		<section class="about-us" id="lesson_4" style="background:url(images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">大学英语（1）</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：费敏</p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：7-907 语音室7-1502 </p>
+		</section>
+
+		<section class="about-us" id="lesson_5" style="background:url(images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">计算机文化基础</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：杨安宸</p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：7-1108（机房） </p>
+		</section>
+
+		<section class="about-us" id="lesson_6" style="background:url(images/map/4.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">大学生心理健康教育</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：何春来</p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：5-301 </p>
+		</section>
+
+		<section class="about-us" id="lesson_7" style="background:url(images/map/5.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">大学生职业规划与创业教育</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：曹春艳</p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：5-301 </p>
+		</section>
+
+		<section class="about-us" id="lesson_8" style="background:url(images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size:5rem;">廉洁修身&思想道德修养与法律基础</h3>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：梁国喜</p>
+				<p class="text-center slideanim" style="color:white;font-size:2rem;">授课地点：5-101 </p>
+		</section>
+
+		<!-- /Banner Section -->
+		<!-- About Section -->
+		<section class="about-us" id="about" style="background:url(images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:100px 0;">
+				<h3 class="text-center slideanim" style="color:white;font-size: 7rem;">经验之谈</h3>
+				<p class="text-center slideanim" style="color:white"> </p>
+
+			</div>
+		</section>
+
+		<section id="contact" class="footer our-testimonials " style="background:url(images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+			<div style="background-color:rgba(1, 1, 1, 0.3);padding-top: 100px;padding-bottom: 30px;">
+				<h3 class="accordion-toggle btn-outline1 text-center slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseContainer"
+				 style="padding: 5px;
+			width: 30rem;
+			margin: auto;
+			border-radius: 10px;
+			margin-bottom: 2rem;">感谢大家的支持</h3>
+				<div id="collapseContainer" class="accordion-body collapse container">
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div class="test">
+								<img src="images/user/tim.jpg" class="img-responsive slideanim" alt="">
+								<h4 class="text-center slideanim">智伤帝</h4>
+								<p class="text-center slideanim">2016级2班</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="test">
+								<img src="images/user/lei.jpg" class="img-responsive slideanim" alt="">
+								<h4 class="text-center slideanim">酆仙深</h4>
+								<p class="text-center slideanim">2016级2班</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="test">
+								<img src="images/user/lai.jpg" class="img-responsive slideanim" alt="">
+								<h4 class="text-center slideanim">· Zaychik</h4>
+								<p class="text-center slideanim">2016级2班</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 打赏按钮 -->
+				<div class="copyright slideanim">
+					<div class="page-reward">
+						<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+						<div class="hide_box"></div>
+						<div class="shang_box">
+							<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+							<div class="shang_tit">
+								<p>
+
+								</p>
+							</div>
+							<div class="shang_payimg">
+								<img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+							</div>
+							<div class="pay_explain">
+
+							</div>
+							<div class="shang_payselect">
+
+								<div class="pay_item checked" data-id="alipay">
+									<span class="radiobox"></span>
+									<span class="pay_logo"><img src="img/alipay.png" alt="支付宝" /></span>
+								</div>
+
+
+								<div class="pay_item" data-id="wechat">
+									<span class="radiobox"></span>
+									<span class="pay_logo"><img src="img/weixin.png" alt="微信" /></span>
+								</div>
+
+							</div>
+							<div class="shang_info">
+								<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="text-center" style="color:aliceblue">留下你的建议 - 共铸数技新未来</h2>
+
+				<div class="container">
+					<div id="gitalk-container"></div><!-- row -->
+				</div>
+				<hr>
+				<div class="copyright">
+					<p>Copyright &copy; 2018 广东工业大学 - 数字媒体技术 <br><a class="contactUs">@联系我们</a></p>
+				</div>
+
+				<div id="contact" class="our-contacts slideanim">
+					<h3 class="text-center slideanim">联系我们</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<form role="form" action="php/server.php" method="POST">
+									<div class="row" style="color:black;">
+										<div class="form-group col-lg-6 slideanim">
+											<input type="text" class="form-control user-name" name="name" placeholder="你的名字" required/>
+										</div>
+										<div class="form-group col-lg-6 slideanim">
+											<input type="email" class="form-control mail" name="email" placeholder="你的邮箱" required/>
+										</div>
+										<div class="form-group col-lg-12 slideanim">
+											<input type="tel" class="form-control pno" name="subject" placeholder="标题" required/>
+										</div>
+										<div class="clearfix"></div>
+										<div class="form-group col-lg-12 slideanim">
+											<textarea class="form-control" rows="6" name="message" 　placeholder="内容" required></textarea>
+										</div>
+										<!-- <input name="website" placeholder="lesson_1" style="display:none"> -->
+										<div class="form-group col-lg-12 slideanim">
+											<button type="submit" class="btn-outline1">提交</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</section>
+
+		<script>
+			// 弹出联系我们
+			$(function () {
+				$('.our-contacts').hide();
+			})
+			$('.contactUs').click(function () {
+				$('.our-contacts').slideToggle(300);
+				setTimeout(() => {
+					$('.bottomBtn').trigger('click')
+				}, 200);
+			})
+		</script>
+
+		<!-- ************************************** -->
+		<!-- **************右下角菜单*************** -->
+		<!-- ************************************** -->
+		<style>
+			.fa-keyboard-o:before {
+				content: "\f11c";
+				position: absolute;
+				left: .6rem;
+				top: .6rem;
+			}
+
+			.fa-chevron-down:before {
+				content: "\f078";
+				position: absolute;
+				left: .7rem;
+				top: .5rem;
+			}
+
+			.fa-chain:before,
+			.fa-link:before {
+				content: "\f0c1";
+				position: absolute;
+				left: .8rem;
+				top: .7rem;
+			}
+
+			.fa-eye-slash:before {
+				content: "\f070";
+				position: absolute;
+				left: .7rem;
+				top: .5rem;
+			}
+
+			.fa-gear:before,
+			.fa-cog:before {
+				content: "\f013";
+				position: absolute;
+				left: .7rem;
+				top: .7rem;
+			}
+
+			#qutton_upload {
+				border-radius: 50px;
+			}
+
+			#qutton_upload:hover {
+				background-color: #00a0e8 !important;
+			}
+
+			#uploadDialog {
+				/* width: 600px; */
+				width: 37rem;
+				height: 50px;
+				border-radius: 10em;
+				background-color: #4094c7;
+				/* padding: 10px; */
+				box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+			}
+
+			#uploadDialog input#fileUrl {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				color: #333333;
+				width: 26rem;
+				height: 30px;
+				border-radius: 2px;
+				border: 1px solid #afafaf;
+				margin: 1rem;
+				font-size: 1em;
+			}
+
+			#uploadDialog .urlField {
+				display: block;
+				width: 83%;
+				height: 30px;
+				/* padding: 5px; */
+				margin: 5px auto 0 auto;
+			}
+
+			#button_basic_upload {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				margin: 1rem;
+				font-size: 2rem;
+				width: 8rem;
+				height: 30px;
+
+				background-color: #498AF2;
+				border: 1px solid #196bef;
+				border-bottom: 1px solid #105fdf;
+				color: white;
+
+			}
+
+
+			#settingDialog {
+				width: 20rem;
+				height: 20rem;
+				border-radius: 1em;
+				background-color: #4094c7;
+				
+			}
+		</style>
+		<!-- /Footer Section -->
+		<!-- Back To Top -->
+		<nav id="gooey-upper" style="position:fixed;bottom:1rem;right:5.5rem;z-index: 11;">
+			<!-- <nav id="gooey-upper" style="position:fixed;bottom:10rem;right:15.5rem;"> -->
+			<input type="checkbox" class="menu-open" name="menu-open1" id="menu-open1" />
+			<label class="open-button" for="menu-open1" style="z-index:1">
+				<span class="burger burger-1"></span>
+				<span class="burger burger-2"></span>
+				<span class="burger burger-3"></span>
+			</label>
+
+			<a href="#features" class="topBtn gooey-menu-item">
+				<i class="fa fa-chevron-up fa-2x"></i>
+			</a>
+
+			<a href="#h-spaced-menu" class="gooey-menu-item">
+				<div id="setPos_setting">
+					<div id="qutton_setting" class='qutton fa fa-cog fa-2x '>
+
+						<div class="qutton_dialog" id="settingDialog">
+							123415361
+						</div>
+
+					</div>
+				</div>
+
+			</a>
+
+			<a href="#menu-v-example" class="gooey-menu-item">
+				<i class="fa fa-eye-slash fa-2x"></i>
+			</a>
+
+			<a class="gooey-menu-item">
+
+				<div id="setPos">
+					<div id="qutton_upload" class='qutton fa fa-keyboard-o fa-2x '>
+
+						<div class="qutton_dialog" id="uploadDialog">
+							<div class="urlField">
+								<input type="text" id="fileUrl" placeholder="Enter URL">
+								<button id="button_basic_upload"> 发弹幕</button>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</a>
+
+			<a href="#event-api" class="bottomBtn gooey-menu-item">
+				<i class="fa fa-chevron-down fa-2x"></i>
+			</a>
+
+
+			<a href="#0" class="gooey-menu-item">
+
+				<div class="ctaTile fa fa-link fa-2x" data-cta-target=".js-ctaModal-3" data-disable-scroll=true></div>
+			</a>
+
+			<style>
+				.ctaTile {
+					width: 33.333%;
+					float: left;
+					height: 150px;
+				}
+
+				.ctaModal {
+					position: fixed;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding: 40px;
+					background: #4094c7;
+					color: white;
+					z-index: 1;
+					visibility: hidden;
+					opacity: 0;
+					pointer-events: none;
+					transition: 200ms ease;
+					overflow: auto;
+				}
+
+				.ctaModal-close-btn {
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					/* background: url(img/close.png) no-repeat center; */
+					width: 32px;
+					height: 32px;
+					padding: 32px;
+					opacity: 0.8;
+					cursor: pointer;
+					transition: 0.3s ease;
+				}
+
+				.ctaModal-close-btn:hover {
+					opacity: 1;
+				}
+
+				.ctaModal.show {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: auto;
+				}
+			</style>
+
+		</nav>
+		<!-- 分享 - 弹出层 -->
+		<div class="js-ctaModal-3  ctaModal" style="padding:0px;overflow:hidden;z-index: 11">
+			<span class="ctaModal-close-btn fa fa-close fa-2x "></span>
+
+			<section class="canvas-wrap" style="height:100%;width:100%">
+
+				<div id="canvas" class="gradient"></div>
+				<style>
+					.social-share {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						width: 1440px;
+						height: 105;
+						margin: -250px 0 0 -720px;
+					}
+
+					@media (max-width: 1500px) {
+						.social-share {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							width: 720px;
+							height: 105;
+							margin: -450px 0 0 -360px;
+							text-align: center;
+						}
+					}
+
+					@media (max-width: 700px) {
+						.social-share {
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							width: 360px;
+							height: 105;
+							margin: -550px 0 0 -180px;
+							text-align: center;
+						}
+					}
+
+					.social-share .social-share-icon {
+						width: 1.5em;
+						height: 1.5em;
+						font-size: 6em;
+						line-height: 1.4;
+						border: 0.7rem solid;
+					}
+
+					.social-share .icon-wechat .wechat-qrcode {
+						left: -42px;
+					}
+
+					.social-share .icon-heart {
+						color: #ff5722
+					}
+
+					.social-share .icon-heart:hover {
+						background: #ff5722;
+						color: white
+					}
+				</style>
+				<div class="share-component" data-initialized="true" data-wechat-qrcode-helper="<p>扫一下二维码</p><p>便可将网站分享至朋友圈</p>">
+					<a href="#" class="social-share-icon icon-weibo"></a>
+					<a href="#" class="social-share-icon icon-qq"></a>
+					<a href="#" class="social-share-icon icon-qzone"></a>
+					<a href="#" class="social-share-icon icon-douban"></a>
+					<a href="#" class="social-share-icon icon-wechat"></a>
+					<a href="#" class="social-share-icon icon-google"></a>
+					<a href="#" class="social-share-icon icon-facebook"></a>
+					<a href="#" class="social-share-icon icon-twitter"></a>
+					<a href="#" class="social-share-icon icon-heart"></a>
+				</div>
+
+
+			</section>
+
+			<div id="shareCopy" class="row clearfix" style="position:absolute;left:20%;top:0px;width: 60%;">
+				<div class="col-md-12 column">
+					<div class="alert alert-success alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+						<h5>
+							<div style="text-align:center;margin-left:6%;">
+								<strong>网页地址复制成功！</strong>
+							</div>
+						</h5>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script>
+			//打开分享页面
+			var closeFn;
+			function closeShowingctaModal() {
+				var showingctaModal = document.querySelector('.ctaModal.show');
+				if (!showingctaModal) return;
+				showingctaModal.classList.remove('show');
+				document.body.classList.remove('disable-mouse');
+				document.body.classList.remove('disable-scroll');
+				if (closeFn) {
+
+					closeFn();
+					closeFn = null;
+				}
+			}
+			document.addEventListener('click', function (e) {
+				var target = e.target;
+				if (target.dataset.ctaTarget) {
+					$('body').css('overflow', 'hidden');
+					$('.navbar-wrapper').css('display', 'none');
+					closeFn = cta(target, document.querySelector(target.dataset.ctaTarget), { relativeToWindow: true }, function showctaModal(ctaModal) {
+						ctaModal.classList.add('show');
+						document.body.classList.add('disable-mouse');
+						if (target.dataset.disableScroll) {
+							document.body.classList.add('disable-scroll');
+						}
+					});
+				}
+				else if (target.classList.contains('ctaModal-close-btn')) {
+					$('body').css('overflow', 'visible');
+					$('.navbar-wrapper').css('display', 'block');
+					closeShowingctaModal();
+				}
+			});
+			document.addEventListener('keyup', function (e) {
+				if (e.which === 27) {
+					$('body').css('overflow', 'visible');
+					$('.navbar-wrapper').css('display', 'block');
+					closeShowingctaModal();
+
+				}
+			})
+
+			// 复制网址
+			new ClipboardJS('.icon-heart');
+			new ClipboardJS('.icon-wechat');
+			$('#shareCopy').toggle();
+			$('.icon-heart').attr('data-clipboard-text', window.location.href)
+			$('.icon-wechat').attr('data-clipboard-text', window.location.href)
+			$('.icon-heart').click(function () {
+				$('#shareCopy').fadeIn();
+
+				setTimeout(() => {
+					$('#shareCopy').fadeOut();
+				}, 2000);
+
+			})
+			$('.icon-wechat').click(function () {
+				$('.icon-heart').trigger('click');
+			})
+		</script>
+
+		<script>
+			$(function ($) {
+				// 发弹幕的动态效果
+				$(document).ready(function () {
+					let quttonUpload_clickCheck = true;
+					let quttonSetting_clickCheck = true;
+					var quttonUpload = Qutton.getInstance($('#qutton_upload'));
+
+					$('#qutton_upload').css('border-radius','50%')
+					$('#qutton_setting').css('border-radius','50%')
+
+					quttonUpload.init({
+						width: $('.gooey-menu-item').css('width'),
+						height: $('.gooey-menu-item').css('height'),
+						backgroundColor: "#4094c7",
+						clickCallback: function () {
+
+							if (quttonUpload_clickCheck) {
+								quttonUpload_clickCheck = false;
+
+								$('#setPos').css({
+									"position": "absolute",
+									"padding": "0px 15rem",
+									"left": "-15rem"
+								});
+
+								$("#setPos").velocity({
+									left: "-48.5rem"
+								}, { duration: 100 });
+
+								$('#qutton_upload').append("<style>.fa-keyboard-o:before {display: none;}</style>")
+
+
+							}
+
+						},
+						closeCallback: function () {
+							quttonUpload_clickCheck = true;
+							$('#qutton_upload').children('style').remove();
+							$('#qutton_upload').append("<style>.fa-keyboard-o:before {display: block;}</style>")
+
+							$('#qutton_upload').css({
+								width: $('.gooey-menu-item').css('width'),
+								height: $('.gooey-menu-item').css('height'),
+							})
+
+							$("#setPos").velocity({
+								left: "-15rem"
+							}, {
+									delay: 300,
+									duration: 100
+								});
+						}
+
+					});
+
+					var quttonSetting = Qutton.getInstance($('#qutton_setting'));
+
+					quttonSetting.init({
+						width: $('.gooey-menu-item').css('width'),
+						height: $('.gooey-menu-item').css('height'),
+						backgroundColor: "#4094c7",
+						clickCallback: function () {
+
+							if (quttonSetting_clickCheck) {
+								quttonSetting_clickCheck = false;
+
+								$('#setPos_setting').css({
+									position: "absolute",
+									padding: "0px 15rem",
+									left: "-15rem",
+									top:"0rem"
+								});
+
+								$("#setPos_setting").velocity({
+									left: "-32rem",
+									top:"-17rem"
+								}, { 
+									duration: 100,
+									
+								 });
+
+								
+								$('#qutton_setting').append("<style>.fa-cog:before {display: none;}</style>")
+
+							}
+
+						},
+						closeCallback: function () {
+							quttonSetting_clickCheck = true;
+							$('#qutton_setting').children('style').remove();
+							$('#qutton_setting').append("<style>.fa-cog:before {display: block;}</style>")
+
+							$('#qutton_setting').css({
+								width: $('.gooey-menu-item').css('width'),
+								height: $('.gooey-menu-item').css('height'),
+							})
+
+							$("#setPos_setting").velocity({
+								left: "-15rem",
+								top:"0rem"
+							}, {
+									delay: 300,
+									duration: 100,
+
+								});
+
+								$('#qutton_setting').append("<style>.fa-cog:before {display: block;}</style>")
+						}
+
+					});
+
+				})
+
+				//右下角按钮菜单
+				$("#gooey-upper").gooeymenu({
+					bgColor: "#4094c7",
+					contentColor: "white",
+					style: "circle",
+					circle: {
+						radius: 45
+					},
+					margin: "medium",
+					size: 50,
+					bounce: true,
+					bounceLength: "small",
+					transitionStep: 100,
+					hover: "#00a0e8",
+					close: function () {//修正火狐浏览器 点击问题
+						setTimeout(() => {
+							$('.gooey-menu-item').css('display', 'none');
+						}, 500);
+
+					}
+				});
+				//修正火狐浏览器 点击问题
+				$('.gooey-menu-item').css('display', 'none');
+				$("#gooey-upper").click(function () {
+					$('.gooey-menu-item').css('display', 'block');
+				})
+
+				$('#gooeySVG0').remove();
+
+				jQuery(document).ready(function ($) {
+					// browser window scroll (in pixels) after which the "back to top" link is shown
+					var offset = 300,
+						//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+						offset_opacity = 1200,
+						//duration of the top scrolling animation (in ms)
+						scroll_top_duration = 700,
+						//grab the "back to top" link
+						$back_to_top = $('.topBtn');
+					$back_to_bottom = $('.bottomBtn');
+
+					//smooth scroll to top
+					$back_to_top.on('click', function (event) {
+						event.preventDefault();
+						$('body,html').animate({
+							scrollTop: 0,
+						}, scroll_top_duration
+						);
+					});
+
+					$back_to_bottom.on('click', function (event) {
+						event.preventDefault();
+						$('body,html').animate({
+							scrollTop: $(document).height() - $(window).height(),
+						}, scroll_top_duration
+						);
+					});
+
+				});
+
+				function maskMatch() {
+					$("section").each(function (index) {
+
+						$(this).children('div').css({ "padding": 0 });
+
+						$(this).children('div').css({ "padding-bottom": $(window).height() - $(this).children('div').height() - 200 });
+
+						$(this).children('div').css({ "padding-top": 200 });
+					})
+				}
+
+				maskMatch();
+
+				// setTimeout(() => {
+				// 	maskMatch();
+				// }, 2000);
+
+				$('#contact').children('div').resize(function () {
+					maskMatch();
+				})
+
+				$(window).resize(function () {
+					maskMatch();
+				})
+
+				$.scrollify({
+					section: "section"
+				});
+
+			})
+
+
+
+		</script>
+		<!-- /Back To Top -->
+
+
+
+
+		<script>
+
+			jQuery(function ($) {
+				$(document).ready(function () {
+					//enabling stickUp on the '.navbar-wrapper' class
+					$('.navbar-wrapper').stickUp({
+						parts: {
+							0: 'banner',
+							1: 'aboutus',
+							2: 'skillset',
+							3: 'experience',
+							4: 'education',
+							5: 'ourwork',
+							6: 'contact'
+						},
+						itemClass: 'menuItem',
+						itemHover: 'active',
+						topMargin: 'auto'
+					});
+				});
+
+
+			});
+
+
+			$(document).ready(function () {
+				// Add smooth scrolling to all links in navbar + footer link
+				$(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function () {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				});
+			})
+		</script>
+		<!-- /js for nav-smooth scroll -->
+		<!-- js for slide animations -->
+		<script>
+			$(window).scroll(function () {
+
+
+				var winTop = $(window).scrollTop();
+				$(".slideanim").each(function () {
+					var pos = $(this).offset().top;
+
+					if (pos < winTop + 600) {
+						$(this).addClass("slide");
+					}
+				});
+
+				if (window.innerWidth < 600) {
+
+					$('.stuckMenu').next().closest('div').css({
+						'margin-top': 6 + 'rem'
+					}, 10);
+
+				} else {
+					if (winTop < 20) {
+						$('.stuckMenu').next().closest('div').css({
+							'margin-top': 0 + 'rem'
+						}, 10);
+						$('.stuckMenu').css("margin-top", " 20px");
+						$('.navbar .container').css("background", " rgba(0,0,0,0.5)");
+						$('.stuckMenu').css("background", " transparent");
+					}
+				}
+
+
+			});
+
+
+			if (window.innerWidth < 600) {
+				// $('.stuckMenu').css("height", "6rem");
+				$('.stuckMenu').css("position", "fixed");
+				$('.stuckMenu').css("background", " rgba(0,0,0,0.5)");
+				$('.stuckMenu').css("margin-top", " 0px");
+				$('.navbar .container').css("background", " transparent");
+				$('.isStuck').css({
+					top: '0px'
+				}, 10, function () {
+
+				});
+
+				$('.stuckMenu').next().closest('div').css({
+					'margin-top': 6 + 'rem'
+				}, 10);
+			}
+
+			$(window).resize(function () {
+				if (window.innerWidth < 600) {
+					$('.stuckMenu').css("position", "fixed");
+					$('.stuckMenu').css("background", " rgba(0,0,0,0.5)");
+					$('.stuckMenu').css("margin-top", " 0px");
+					$('.navbar .container').css("background", " transparent");
+					$('.isStuck').css({
+						top: '0px'
+					}, 10, function () {
+
+					});
+
+					$('.stuckMenu').next().closest('div').css({
+						'margin-top': 6 + 'rem'
+					}, 10);
+				} else {
+					$('.stuckMenu').next().closest('div').css({
+						'margin-top': 0 + 'rem'
+					}, 10);
+					$('.stuckMenu').css("margin-top", " 20px");
+					$('.navbar .container').css("background", " rgba(0,0,0,0.5)");
+					$('.stuckMenu').css("background", " transparent");
+				}
+			});
+
+			$('.navbar-header').css('text-shadow', ' 1px 1px 5px #000000');
+		</script>
+
+		<style>
+			.gt-container .gt-header-textarea {
+				background-color: #aaaaaa;
+				color: black;
+			}
+
+			.gt-svg {
+				background: rgba(245, 245, 245, 0.5);
+				border-radius: 10px;
+			}
+		</style>
+		<!-- /js for slide animations -->
+		<!-- /js files -->
+
+		<script type="text/javascript">
+			// 打赏代码
+			$(".pay_item").click(function () {
+				$(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+				var dataid = $(this).attr('data-id');
+				$(".shang_payimg img").attr("src", "/img/" + dataid + "img.jpg");
+				if (dataid == "alipay")
+					$(".shang_payimg").css("border-color", "#4094c7");
+				else
+					$(".shang_payimg").css("border-color", "#22aa3b");
+				$("#shang_pay_txt").text(dataid == "alipay" ? "支付宝" : "微信");
+			});
+			function dashangToggle() {
+
+				$(".hide_box").fadeToggle();
+				$(".shang_box").fadeToggle();
+
+			}
+
+
+
+			var gitalk = new Gitalk({
+				clientID: 'dca904b31fec28cdd835', ///步骤3创建后得到的
+				clientSecret: '0cc2f138cd7ccd5a02b6707f56f2a5e01acf03e2',///步骤3创建后得到的
+				repo: 'web_comment',///步骤4创建的库名
+				owner: 'FXTD-ODYSSEY',//自己的GitHub用户名
+				admin: ['FXTD-ODYSSEY'],//自己的GitHub用户名
+				id: 'lesson_1', // 唯一标示，一般是文章id也可以是文章url
+				distractionFreeMode: false  // Facebook-like distraction free mode
+			})
+			gitalk.render('gitalk-container')
+		</script>
+</body>
+
+</html>

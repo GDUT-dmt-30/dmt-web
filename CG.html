@@ -1,0 +1,670 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CG方向</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- css files -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- /css files -->
+	<!-- font files -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+	<!-- /font files -->
+	<!-- js files -->
+	<script src="js/modernizr.custom.js"></script>
+	<!-- /js files -->
+	<link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js"></script>
+	<style>
+		body,
+		td,
+		th {
+			font-family: "Microsoft Yahei";
+			background-color: black;
+		}
+
+		.navbar .container {
+
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+
+		}
+
+		.isStuck {
+			left: 0px;
+			width: 100%;
+		}
+
+		@media (min-width: 1080px) {
+			.container {
+				width: 98rem;
+			}
+		}
+
+		/* @media (min-width: 992px) {
+			.col-md-3 {
+				
+			}
+		} */
+	</style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!-- 添加音乐 -->
+	<!-- <div id="audioBox" style="display:none">
+		<script type="text/javascript"> 
+			window.onload = function () {
+				var arr = [
+				"audio/南征北战NZBZ-我的天空-(电影《青春派》主题曲).mp3",
+				"audio/筷子兄弟-老男孩-(电影《老男孩》主题曲).mp3",
+					"audio/徐歌阳-追梦赤子心.mp3",
+					"audio/矢野立美-遠き呼び声の彼方へ.mp3",
+					"audio/Ally Kerr-The Sore Feet Song.mp3",
+					"audio/轻音乐-卡农.wma",
+					"audio/可米小子-卡农钢琴曲.mp3",
+					"audio/Richard Clayderman-童年的回忆.mp3",
+					];
+
+				//把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐 
+				var myAudio = new Audio();
+				myAudio.preload = true;
+				myAudio.controls = true;
+				myAudio.src = arr.pop();         //每次读数组最后一个元素 
+				myAudio.addEventListener('ended', playEndedHandler, false);
+				myAudio.play();
+				document.getElementById("audioBox").appendChild(myAudio);
+				myAudio.loop = false;//禁止循环，否则无法触发ended事件 
+				function playEndedHandler() {
+					myAudio.src = arr.pop();
+					myAudio.play();
+					// console.log(arr.length);
+					!arr.length && myAudio.removeEventListener('ended', playEndedHandler, false);//只有一个元素时解除绑定 
+				}
+			} 
+		</script>
+	</div> -->
+	<div class="navbar-wrapper stuckMenu">
+		<div class="container slide">
+			<nav class="navbar navbar-inverse navbar-static-top cl-effect-20">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">CG方向</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse navbar-right">
+						<ul class="nav navbar-nav">
+							<li><a href="#myCarousel"><span data-hover="方向概况">方向概述</span></a></li>
+							<li><a href="#service"><span data-hover="三维动画">三维动画</span></a></li>
+							<li><a href="#about"><span data-hover="二维动画">二维动画</span></a></li>
+							<!-- <li><a href="#events"><span data-hover="老师介绍">老师介绍</span></a></li> -->
+							<li><a href="#gallery"><span data-hover="课程介绍">影视后期</span></a></li>
+							<li><a href="#testimonials"><span data-hover="影视特效">影视特效</span></a></li>
+							<li><a href="#contact"><span data-hover="评论">评论</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- Banner Section -->
+	<!-- Carousel
+    ================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<iframe class="carousel-inner item" src="web_ppt/index.html" style="border:0px;padding:0px;margin:0px"></iframe>
+
+	</div><!-- /.carousel -->
+
+	<!-- /About Section -->
+	<!-- Services Section -->
+	<section class="our-services slide" id="service">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:300px 0;">
+			<h3 class="text-center slideanim">广东工业大学 - 数字媒体技术</h3>
+			<p class="text-center slideanim">数字媒体技术（英文 - Digital Media Technology）</p>
+			<div>
+				<div id="features">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 centered">
+								<!-- ACCORDION -->
+								<div class="accordion ac" id="accordion2">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle btn-outline1 slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">专业概况</a>
+										</div><!-- /accordion-heading -->
+										<div id="collapseOne" class="accordion-body collapse ">
+											<div class="accordion-inner slideanim">
+												<p>&emsp;&emsp;数字媒体是计算机科学与艺术学的交叉学科。数字媒体技术是依靠计算机技术来处理媒体、视听、交互以及相关事务的先进技术。广东工业大学数字媒体技术专业需要学习扎实的计算机专业知识，并把它应用到艺术与设计领域。该专业主要学习软件开发、网站开发、虚拟现实、增强现实、游戏开发、交互设计、三维建模、动画制作、视频制作等。通过理论和实践相结合，使自己成为能在各类IT公司及企事业单位从事多媒体软件开发及内容制作、游戏开发、网站开发、手机APP开发、视频与动画制作等方面工作的高素质、应用型的IT人才。</p>
+											</div><!-- /accordion-inner -->
+										</div><!-- /collapse -->
+									</div><!-- /accordion-group -->
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle btn-outline1 slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">发展前景</a>
+										</div>
+										<div id="collapseTwo" class="accordion-body collapse">
+											<div class="accordion-inner slide">
+												<p>&emsp;&emsp;数字媒体技术专业与很多新兴行业相关。展会展览、网上购物、计算机游戏、虚拟现实、数字家庭、远程教育、动画与视频、数字艺术等等，都离不开数字媒体技术专业人才，社会对数字媒体技术专业人才的需求一直居高不下。数字媒体技术人员可以在多媒体IT公司、游戏开发公司和企事业单位里从事程序开发、交互设计、项目策划、产品经理、科学研究等职位工作。随着数字产业与“互联网+”技术的发展，未来社会需要更多高素质数字媒体专业人才，本专业力求从人才培育模式、理念及信息化建设上进行创新，培养适应时代发展的高素质数字媒体技术专业人才。</p>
+											</div><!-- /accordion-inner -->
+										</div><!-- /collapse -->
+									</div><!-- /accordion-group -->
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle btn-outline1 slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">培养特色</a>
+										</div>
+										<div id="collapseThree" class="accordion-body collapse">
+											<div class="accordion-inner slideanim">
+												<p>&emsp;&emsp;本专业依托我校工科背景、艺术特色，结合创新驱动战略和产业升级背景，培养具有数字媒体技术理论基础，具有创新精神和实践能力的高素质应用型人才。
+													<br> 　　为了提高学生应用创新能力，本专业设计了各种实践教学活动，包括实务模拟和综合实习活动；还有项目实战、创新创业、案例分析等比赛活动。本专业注重校外实习基地建设，与多家知名企业签订校外实习实践基地，为学生到企业实习创造条件。
+													<br> 　　本专业开设了各种校企联合培养班，突出多样性、个性化培养。近三年，先后与东田软件、靖凯科技等多家企业合作开设3+1校企班，实现学习和就业高效融合。
+													<br> 　　从2006年开始，本专业与德国不来梅大学计算机学院有长期而稳定的合作关系。专业成绩和外语成绩好的同学可以申请成为交换生到德国不来梅大学学习6个月到1年。另外，本专业与美国尚普兰大学艺术学院有合作关系，成绩优秀的毕业生可申请以4+1形式直升尚普兰大学攻读硕士。
+												</p>
+											</div><!-- /accordion-inner -->
+										</div><!-- /collapse -->
+									</div><!-- /accordion-group -->
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle btn-outline1 slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">行业地位</a>
+										</div>
+										<div id="collapseFour" class="accordion-body collapse">
+											<div class="accordion-inner slideanim">
+												<p>&emsp;&emsp;广东工业大学数字媒体技术专业是我国较早开设的本科专业，师资力量雄厚，其中教授3名（一名为德国不莱梅大学客座教授），副教授5名，具有博士学位的教师6名，目前本专业为国内知名、省内领先，在省内外已形成良好的影响力。
+													<br> 　　本专业以“专业化、国际化、本土化”为旗号，以“教学为重，学生第一”为办学理念，在培养方案、教学模式、师资队伍等方面进行大胆改革与创新，取得了一系列重要成果。
+												</p>
+											</div><!-- /accordion-inner -->
+										</div><!-- /collapse -->
+									</div><!-- /accordion-group -->
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle btn-outline1 slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">就业情况</a>
+										</div>
+										<div id="collapseFive" class="accordion-body collapse">
+											<div class="accordion-inner slideanim">
+												<p>&emsp;&emsp;本专业毕业生在人才市场受较大的欢迎和认同，学生就业形势普遍较好。2011年以来，本专业平均就业率保持在97%以上，其中在广东就业占95%。超过80%毕业生进入了各类企业，4%进入行政事业单位，6%在国内或出国升学深造，5%以专业技术创业并发展良好。</p>
+											</div><!-- /accordion-inner -->
+										</div><!-- /collapse -->
+									</div><!-- /accordion-group -->
+								</div><!-- Accordion -->
+							</div>
+							<!-- <div class="col-md-6">
+					<img src="images/service-img.jpg" class="img-responsive slideanim" alt="service">
+				</div> -->
+						</div>
+					</div>
+					<!--/ .container -->
+					</h3>
+					<!--/ #features -->
+				</div>
+	</section>
+
+	<!-- /Banner Section -->
+	<!-- About Section -->
+	<section class="about-us" id="about" style="background:url(images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:100px 0;">
+			<h3 class="text-center slideanim" style="color:white">环境介绍</h3>
+			<p class="text-center slideanim" style="color:white">广东工业大学东风路校区（原来的校本部）广州市东山区东风东路729号<br>邮政编码：510090。占地面积213亩，校舍面积217692.07平方米。<br>				<span
+				 style="color:oldlace">生活区快递地址：广州市越秀区环市东路463号广东工业大学东风路校区生活区</span> </p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<img src="images/map/map.jpg" class="img-responsive slideanim">
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="about-info">
+							<h4 class="text-center slideanim" style="color:white">交通状况</h4>
+							<p class="abt slideanim" style="color:white"> &emsp;&emsp;广东工业大学东风路校区在地铁站（区庄站）位于五号线与六号线交接点，两条线均可到达。
+								<br> &emsp;&emsp;去往教学区：区庄C出口直走150米，学校大门在右边方向。
+								<br> &emsp;&emsp;去往生活区：区庄站D出口直走150米，看见天桥停下，生活区大门在左手边方向。
+							</p>
+							<p class="abt slideanim" style="color:white;">&emsp;&emsp;东风路校区的公交车站相当之发达的，一般早上6.00—晚上21.00都会有车，可能有些会更晚。 可乘坐256、b3b、b3、b3a、b2a、b10、b2、30、522a、233、280、310a、810、高峰快线2、大学城4线、133、886a、191、886、301、245、545、278、269a
+								至广东工大站下车。
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="slideanim text-center" style="margin-top: 2rem;">
+				<a class="btn-outline1" target="_blank" style="padding: 5px 20%;" href="http://tieba.baidu.com/p/3888993383?pn=1">链接跳转</a>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- /Services Section -->
+	<!-- Events -->
+	<!-- <section class="our-events slideanim" id="events">
+	<h3 class="text-center slideanim">Our Events</h3>
+	<p class="text-center slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim">March 24th</h4>
+					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim">March 26th</h4>
+					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-4">
+				<div class="event-info">
+					<h4 class="text-center slideanim">March 28th</h4>
+					<p class="eve slideanim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section> -->
+
+	<!-- /Events -->
+	<!-- Gallery Section -->
+	<section class="our-gallery" id="gallery" style="background:url(images/map/4.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:140px 0;">
+			<h3 class="text-center slideanim" style="color:white">课程介绍</h3>
+			<p class="text-center slideanim" style="color:white">这里收集的课表是2016级和2015级的情况<br>不同年级的课程安排并不一样<br>此处仅供参考</p>
+			<div class="container text-center">
+				<style>
+					.lessonBtn {
+						margin: 1rem
+					}
+				</style>
+				<div class="row clearfix">
+					<div class="col-md-3 column lessonColumn">
+
+						<img src="images/lesson/大一上.png" data-darkbox="images/lesson/大一上.png" data-darkbox-description="<div ><b>大一上学期课表</b></div>"
+						 class="img-responsive slideanim">
+
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="./lesson_1.html">大一上学期</a>
+						</div>
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大一下.png" data-darkbox="images/lesson/大一下.png" data-darkbox-description="<div ><b>大一下学期课表</b></div>"
+						 class="img-responsive slideanim">
+
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大一下学期</a>
+						</div>
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大二上.png" data-darkbox="images/lesson/大二上.png" data-darkbox-description="<div ><b>大二上学期课表</b></div>"
+						 class="img-responsive slideanim">
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大二上学期</a>
+						</div>
+
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大二下.png" data-darkbox="images/lesson/大二下.png" data-darkbox-description="<div ><b>大二下学期课表</b></div>"
+						 class="img-responsive slideanim">
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大二下学期</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div class="col-md-3 column lessonColumn">
+
+						<img src="images/lesson/大三上.png" data-darkbox="images/lesson/大三上.png" data-darkbox-description="<div ><b>大三上学期课表</b></div>"
+						 class="img-responsive slideanim">
+
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大三上学期</a>
+						</div>
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大三下.png" data-darkbox="images/lesson/大三下.png" data-darkbox-description="<div ><b>大三下学期课表</b></div>"
+						 class="img-responsive slideanim">
+
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大三下学期</a>
+						</div>
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大四上.png" data-darkbox="images/lesson/大四上.png" data-darkbox-description="<div ><b>大四上学期课表</b></div>"
+						 class="img-responsive slideanim">
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大四上学期</a>
+						</div>
+
+					</div>
+					<div class="col-md-3 column">
+						<img src="images/lesson/大四下.png" data-darkbox="images/lesson/大四下.png" data-darkbox-description="<div ><b>大四下学期课表</b></div>"
+						 class="img-responsive slideanim">
+						<div class="slideanim lessonBtn">
+							<a class="btn-outline1 text-center" target="_blank" style="padding: 5px 5%;" href="#">大四下学期</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="footer our-testimonials" style="background:url(images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+
+		<div style="background-color:rgba(1, 1, 1, 0.3);padding:100px 0;">
+
+			<h3 class="accordion-toggle btn-outline1 text-center slideanim" data-toggle="collapse" data-parent="#accordion2" href="#collapseContainer"
+			 style="padding: 5px;
+			width: 30rem;
+			margin: auto;
+			border-radius: 10px;
+			margin-bottom: 2rem;">感谢大家的支持</h3>
+			<div id="collapseContainer" class="accordion-body collapse container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="test">
+							<img src="images/user/tim.jpg" class="img-responsive slideanim" alt="">
+							<h4 class="text-center slideanim">智伤帝</h4>
+							<p class="text-center slideanim">2016级2班</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="test">
+							<img src="images/user/lei.jpg" class="img-responsive slideanim" alt="">
+							<h4 class="text-center slideanim">酆仙深</h4>
+							<p class="text-center slideanim">2016级2班</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="test">
+							<img src="images/user/lai.jpg" class="img-responsive slideanim" alt="">
+							<h4 class="text-center slideanim">· Zaychik</h4>
+							<p class="text-center slideanim">2016级2班</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 打赏按钮 -->
+			<div class="copyright slideanim">
+				<div class="page-reward">
+					<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+					<div class="hide_box"></div>
+					<div class="shang_box">
+						<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+						<div class="shang_tit">
+							<p>
+
+							</p>
+						</div>
+						<div class="shang_payimg">
+							<img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+						</div>
+						<div class="pay_explain">
+
+						</div>
+						<div class="shang_payselect">
+
+							<div class="pay_item checked" data-id="alipay">
+								<span class="radiobox"></span>
+								<span class="pay_logo"><img src="img/alipay.png" alt="支付宝" /></span>
+							</div>
+
+
+							<div class="pay_item" data-id="wechat">
+								<span class="radiobox"></span>
+								<span class="pay_logo"><img src="img/weixin.png" alt="微信" /></span>
+							</div>
+
+						</div>
+						<div class="shang_info">
+							<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<h2 class="text-center" style="color:aliceblue">留下你的建议 - 共铸数技新未来</h2>
+
+			<div class="container">
+				<div id="gitalk-container"></div><!-- row -->
+			</div>
+			<hr>
+			<div class="copyright">
+				<p>Copyright &copy; 2018 广东工业大学 - 数字媒体技术</p>
+			</div>
+	</section>
+
+	<!-- /Footer Section -->
+	<!-- Back To Top -->
+	<a href="#0" class="cd-top">Top</a>
+	<!-- /Back To Top -->
+
+
+
+	<!-- js files -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- js for gallery -->
+	<script src="js/darkbox.js"></script>
+	<!-- /js for gallery -->
+	<!-- js for back to top -->
+	<!-- <script src="js/main.js"></script> -->
+	<!-- /js for back to top -->
+	<!-- js for nav-smooth scroll -->
+	<script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
+	<!-- <script src="https://cdn.bootcss.com/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script> -->
+	<script src="js/stickUp.js"></script>
+	<script>
+
+		jQuery(function ($) {
+			$(document).ready(function () {
+				//enabling stickUp on the '.navbar-wrapper' class
+				$('.navbar-wrapper').stickUp({
+					parts: {
+						0: 'banner',
+						1: 'aboutus',
+						2: 'skillset',
+						3: 'experience',
+						4: 'education',
+						5: 'ourwork',
+						6: 'contact'
+					},
+					itemClass: 'menuItem',
+					itemHover: 'active',
+					topMargin: 'auto'
+				});
+			});
+
+
+		});
+
+		jQuery(document).ready(function ($) {
+			// browser window scroll (in pixels) after which the "back to top" link is shown
+			var offset = 300,
+				//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+				offset_opacity = 1200,
+				//duration of the top scrolling animation (in ms)
+				scroll_top_duration = 700,
+				//grab the "back to top" link
+				$back_to_top = $('.cd-top');
+
+			//hide or show the "back to top" link
+			$(window).scroll(function () {
+				($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+				if ($(this).scrollTop() > offset_opacity) {
+					$back_to_top.addClass('cd-fade-out');
+				}
+			});
+
+			//smooth scroll to top
+			$back_to_top.on('click', function (event) {
+				event.preventDefault();
+				$('body,html').animate({
+					scrollTop: 0,
+				}, scroll_top_duration
+				);
+			});
+
+		});
+
+		$(document).ready(function () {
+			// Add smooth scrolling to all links in navbar + footer link
+			$(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function () {
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			});
+		})
+	</script>
+	<!-- /js for nav-smooth scroll -->
+	<!-- js for slide animations -->
+	<script>
+		$(window).scroll(function () {
+
+
+			var winTop = $(window).scrollTop();
+			$(".slideanim").each(function () {
+				var pos = $(this).offset().top;
+
+				if (pos < winTop + 600) {
+					$(this).addClass("slide");
+				}
+			});
+
+			if (window.innerWidth < 600) {
+
+				$('.stuckMenu').next().closest('div').css({
+					'margin-top': 6 + 'rem'
+				}, 10);
+
+			} else {
+				if (winTop < 20) {
+					$('.stuckMenu').next().closest('div').css({
+						'margin-top': 0 + 'rem'
+					}, 10);
+					$('.stuckMenu').css("margin-top", " 20px");
+					$('.navbar .container').css("background", " rgba(0,0,0,0.5)");
+					$('.stuckMenu').css("background", " transparent");
+				}
+			}
+
+
+		});
+
+
+		if (window.innerWidth < 600) {
+			$('.stuckMenu').css("height", "6rem");
+			$('.stuckMenu').css("position", "fixed");
+			$('.stuckMenu').css("background", " rgba(0,0,0,0.5)");
+			$('.stuckMenu').css("margin-top", " 0px");
+			$('.navbar .container').css("background", " transparent");
+			$('.isStuck').css({
+				top: '0px'
+			}, 10, function () {
+
+			});
+
+			$('.stuckMenu').next().closest('div').css({
+				'margin-top': 6 + 'rem'
+			}, 10);
+		}
+
+		$(window).resize(function () {
+			if (window.innerWidth < 600) {
+				$('.stuckMenu').css("position", "fixed");
+				$('.stuckMenu').css("background", " rgba(0,0,0,0.5)");
+				$('.stuckMenu').css("margin-top", " 0px");
+				$('.navbar .container').css("background", " transparent");
+				$('.isStuck').css({
+					top: '0px'
+				}, 10, function () {
+
+				});
+
+				$('.stuckMenu').next().closest('div').css({
+					'margin-top': 6 + 'rem'
+				}, 10);
+			} else {
+				$('.stuckMenu').next().closest('div').css({
+					'margin-top': 0 + 'rem'
+				}, 10);
+				$('.stuckMenu').css("margin-top", " 20px");
+				$('.navbar .container').css("background", " rgba(0,0,0,0.5)");
+				$('.stuckMenu').css("background", " transparent");
+			}
+		});
+
+		$('.navbar-header').css('text-shadow', ' 1px 1px 5px #000000');
+
+
+		var gitalk = new Gitalk({
+			clientID: '5a4f5c2cf57ee79531be', ///步骤3创建后得到的
+			clientSecret: 'fc76a2fd15f00a16553136ba346e1913b5fda740',///步骤3创建后得到的
+			repo: 'web_comment',///步骤4创建的库名
+			owner: 'FXTD-ODYSSEY',//自己的GitHub用户名
+			admin: ['FXTD-ODYSSEY'],//自己的GitHub用户名
+			id: 'inedx', // 唯一标示，一般是文章id也可以是文章url
+			distractionFreeMode: false  // Facebook-like distraction free mode
+		})
+		gitalk.render('gitalk-container')
+
+	</script>
+
+	<style>
+		.gt-container .gt-header-textarea {
+			background-color: #aaaaaa;
+			color: black;
+		}
+
+		.gt-svg {
+			background: rgba(245, 245, 245, 0.5);
+			border-radius: 10px;
+		}
+	</style>
+	<!-- /js for slide animations -->
+	<!-- /js files -->
+
+	<script type="text/javascript">
+		// 打赏代码
+		$(".pay_item").click(function () {
+			$(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+			var dataid = $(this).attr('data-id');
+			$(".shang_payimg img").attr("src", "/img/" + dataid + "img.jpg");
+			if (dataid == "alipay")
+				$(".shang_payimg").css("border-color", "#4094c7");
+			else
+				$(".shang_payimg").css("border-color", "#22aa3b");
+			$("#shang_pay_txt").text(dataid == "alipay" ? "支付宝" : "微信");
+		});
+		function dashangToggle() {
+
+			$(".hide_box").fadeToggle();
+			$(".shang_box").fadeToggle();
+		}
+	</script>
+</body>
+
+</html>

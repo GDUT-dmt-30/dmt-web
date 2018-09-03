@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <title>全屏幻灯片切换动画，支持拖拽 | jQuery特效|H5网站特效| H5游戏</title>
+	<meta name="keywords" content="canvas动画, 手机微信网站特效, css3动画, html5特效, 网页特效" />
+	<meta name="description" content="网页特效库-专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。所有的资源都免费提供广大童鞋下载学习和使用。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  
+  
+
+      <link rel="stylesheet" href="css/style.css">
+<style>
+
+video#bgvid { 
+
+position: absolute; left: 0; top:0;
+
+min-width: 100%; min-height: 100%;
+
+width: auto; height: 200%; z-index: -100;
+
+background-size: cover; 
+
+}
+
+#block {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,1)); 
+}
+
+/* @media (max-width:762px) {
+  #block {
+    display: none;
+  }
+} */
+body {font-family: "Microsoft Yahei";}
+</style>
+  
+</head>
+
+<body>
+  <div class="slider-container">
+  <div class="slider-control left inactive"></div>
+  <div class="slider-control right"></div>
+  <ul class="slider-pagi"></ul>
+  <div class="slider">
+    <div class="slide active">
+      <div class="slide__content">
+          <div class="slide__bg">
+              <video autoplay loop id="bgvid" muted="true" style="top:-50%;left:-40%;" >
+                  
+                  <source src="video/4_CG.mp4" type="video/mp4">
+                
+              </video>
+          </div>
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">CG</h2>
+          <p class="slide__text-desc">CG通常指的是数码化的作品，内容是纯艺术创作到广告设计，可以是二维三维、静止或动画。</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide ">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+          <video autoplay loop id="bgvid" muted="true" style="left:-148%;top:-120%; height:350%;width: 400%;">
+
+              <source src="video/2_software.mp4" type="video/mp4">
+            
+          </video>
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+        
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">软件开发</h2>
+          <p class="slide__text-desc">软件开发是根据用户要求建造出软件系统或者系统中的软件部分的过程。软件开发是一项包括需求捕捉、需求分析、设计、实现和测试的系统工程。</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide ">
+      <div class="slide__bg"></div>
+      <video autoplay loop id="bgvid" muted="true" style="top:-50%;left:-30%">
+              
+          <source src="video/1_Unity.mp4" type="video/mp4">
+        
+      </video>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">游戏开发</h2>
+          <p class="slide__text-desc">游戏开发指利用计算机编程语言，如C编程语言、C++、java等，编写计算机、手机或游戏机上的游戏。</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide ">
+      <div class="slide__bg"></div>
+      <video autoplay loop id="bgvid" muted="true" style="top:-50%;">
+              
+          <source src="video/3_frontEnd.mp4" type="video/mp4">
+        
+      </video>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">网站开发</h2>
+          <p class="slide__text-desc">网站开发是制作一些专业性强的网站，比如说动态网页。ASP、PHP、JSP网页。</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide ">
+      <div class="slide__bg"></div>
+      <video autoplay loop id="bgvid"  muted="true" style="top:0%;left:0%;height: 100%">
+              
+          <source src="video/5_app.mp4" type="video/mp4">
+        
+      </video>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">APP开发</h2>
+          <p class="slide__text-desc">App开发，是指专注于手机应用软件开发与服务。 App是application的缩写，通常专指手机上的应用软件，或称手机客户端。</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="slide ">
+      <div class="slide__bg"></div>
+      <video autoplay loop id="bgvid">
+              
+          <source src="01 - Course Overview.mp4" type="video/mp4">
+        
+      </video>
+      <div class="slide__content">
+        <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+          <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+        </svg>
+
+        <div id="block"></div>
+
+        <div class="slide__text">
+          <h2 class="slide__text-heading">Project name 3</h2>
+          <p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+          <a class="slide__text-link">了解详情</a>
+        </div>
+      </div>
+    </div>
+     -->
+
+  </div>
+</div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>
