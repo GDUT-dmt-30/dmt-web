@@ -12,6 +12,7 @@
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="js/gooey/gooey.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="js/slide/srs.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- /css files -->
 
 
@@ -71,6 +72,9 @@
 
 	<!-- 复制粘贴 -->
 	<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+
+	<!-- 滑竿 -->
+	<script src="js/slide/srs.js"></script>
 	<style>
 		body,
 		td,
@@ -536,7 +540,7 @@
 
 			#uploadDialog {
 				/* width: 600px; */
-				width: 37rem;
+				width: 32rem;
 				height: 50px;
 				border-radius: 10em;
 				background-color: #4094c7;
@@ -583,11 +587,21 @@
 
 
 			#settingDialog {
-				width: 20rem;
-				height: 20rem;
+				width: 30rem;
+				height: 7rem;
 				border-radius: 1em;
 				background-color: #4094c7;
-				
+
+			}
+			.srs-slider {
+				margin: 10px auto;
+				width: 80%;
+			}
+			.srs-minus span {
+				color: white;
+			}
+			.srs-plus span {
+				color: white;
 			}
 		</style>
 		<!-- /Footer Section -->
@@ -608,11 +622,10 @@
 			<a href="#h-spaced-menu" class="gooey-menu-item">
 				<div id="setPos_setting">
 					<div id="qutton_setting" class='qutton fa fa-cog fa-2x '>
-
 						<div class="qutton_dialog" id="settingDialog">
-							123415361
-						</div>
-
+								<div style="margin:1rem;">弹幕透明度</div>
+								<input id="example-1" name="example-1" placeholder="0 - 100" type="number" min="0" max="100" step="1" value="50" data-color="rgb(73, 138, 242)" class="srs">
+						</div>		
 					</div>
 				</div>
 
@@ -860,8 +873,8 @@
 					let quttonSetting_clickCheck = true;
 					var quttonUpload = Qutton.getInstance($('#qutton_upload'));
 
-					$('#qutton_upload').css('border-radius','50%')
-					$('#qutton_setting').css('border-radius','50%')
+					$('#qutton_upload').css('border-radius', '50%')
+					$('#qutton_setting').css('border-radius', '50%')
 
 					quttonUpload.init({
 						width: $('.gooey-menu-item').css('width'),
@@ -879,7 +892,7 @@
 								});
 
 								$("#setPos").velocity({
-									left: "-48.5rem"
+									left: "-43.5rem"
 								}, { duration: 100 });
 
 								$('#qutton_upload').append("<style>.fa-keyboard-o:before {display: none;}</style>")
@@ -927,14 +940,14 @@
 								});
 
 								$("#setPos_setting").velocity({
-									left: "-32rem",
-									top:"-17rem"
-								}, { 
-									duration: 100,
-									
-								 });
+									left: "-41.5rem",
+									top:"-4.5rem"
+								}, {
+										duration: 100,
 
-								
+									});
+
+
 								$('#qutton_setting').append("<style>.fa-cog:before {display: none;}</style>")
 
 							}
@@ -959,7 +972,7 @@
 
 								});
 
-								$('#qutton_setting').append("<style>.fa-cog:before {display: block;}</style>")
+							$('#qutton_setting').append("<style>.fa-cog:before {display: block;}</style>")
 						}
 
 					});
