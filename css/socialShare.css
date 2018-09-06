@@ -1,0 +1,64 @@
+.social-share {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1440px;
+    height: 105;
+    margin: -250px 0 0 -720px;
+    padding: 15rem 0px 0px;
+}
+
+@media (max-width: 1500px) {
+    .social-share {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 720px;
+        /* height: 105px; */
+        margin: -450px 0 0 -360px;
+        text-align: center;
+    }
+
+    .social-share .social-share-icon {
+        width: 20%!important;
+        height: 20%!important;
+    }
+}
+
+@media (max-width: 700px) {
+    .social-share {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 360px;
+        height: 105;
+        margin: -550px 0 0 -180px;
+        text-align: center;
+    }
+
+    .social-share .social-share-icon {
+        width: 40%!important;
+        height: 40%!important;
+    }
+}
+
+.social-share .social-share-icon {
+    width: 10%;
+    height: 10%;
+    font-size: 6em;
+    line-height: 1.4;
+    border: 0.7rem solid;
+}
+
+.social-share .icon-wechat .wechat-qrcode {
+    left: -42px;
+}
+
+.social-share .icon-heart {
+    color: #ff5722
+}
+
+.social-share .icon-heart:hover {
+    background: #ff5722;
+    color: white
+}

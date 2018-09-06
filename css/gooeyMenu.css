@@ -1,0 +1,148 @@
+.fa-keyboard-o:before {
+    content: "\f11c";
+    position: absolute;
+    left: .6rem;
+    top: .6rem;
+}
+
+.fa-chevron-down:before {
+    content: "\f078";
+    position: absolute;
+    left: .7rem;
+    top: .5rem;
+}
+
+.fa-chain:before, .fa-link:before {
+    content: "\f0c1";
+    position: absolute;
+    left: .8rem;
+    top: .7rem;
+}
+
+.fa-eye-slash:before {
+    content: "\f070";
+    position: absolute;
+    left: .7rem;
+    top: .5rem;
+}
+
+.fa-gear:before, .fa-cog:before {
+    content: "\f013";
+    position: absolute;
+    left: .7rem;
+    top: .7rem;
+}
+
+#qutton_upload {
+    border-radius: 50px;
+}
+
+#qutton_upload:hover {
+    background-color: #00a0e8 !important;
+}
+
+#qutton_setting:hover {
+    background-color: #00a0e8 !important;
+}
+
+
+#uploadDialog {
+    /* width: 600px; */
+    width: 32rem;
+    height: 50px;
+    border-radius: 10em;
+    background-color: #4094c7;
+    /* padding: 10px; */
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
+}
+
+#uploadDialog input#fileUrl {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #333333;
+    width: 14.9rem;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
+    margin: 1rem;
+    font-size: 1em;
+}
+
+#uploadDialog input#fileUrl:hover{
+    border-color: #f0c49b;
+
+}
+
+#uploadDialog .urlField {
+    display: block;
+    width: 83%;
+    height: 30px;
+    /* padding: 5px; */
+    margin: 5px auto 0 auto;
+}
+
+#button_basic_upload {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    width: 6rem;
+    height: 30px;
+    background-color: #498AF2;
+    border: 1px solid #196bef;
+    border-bottom: 1px solid #105fdf;
+    color: white;
+}
+
+#settingDialog {
+    width: 30rem;
+    height: 8rem;
+    border-radius: 1em;
+    background-color: #4094c7;
+}
+
+.srs-slider {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.srs-minus span {
+    color: white;
+}
+
+.srs-plus span {
+    color: white;
+}
+
+/* 取色器位置 */
+.sp-replacer {
+    position: absolute;
+    margin: 1rem .1rem;
+    top: 0;
+    right: 7rem;
+
+}
+/* 弹幕发射位置 */
+#position {
+    color: black;
+    font-size: 1.8rem;
+    margin: 1rem .1rem;
+    position: absolute;
+    top: 0px;
+    width: 5rem;
+    height: 30px;
+    right: 11rem;
+    border: solid 1px #91765d;
+}
+
+@media (max-width:700px){
+    #position {
+        font-size: 1.3rem;
+    }
+}
+
+#position:hover {
+    border-color: #f0c49b;
+}
