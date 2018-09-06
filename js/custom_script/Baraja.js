@@ -8,7 +8,7 @@ $(function () {
         let addItem = `
 							
 							<li>
-								<img src="images/user/lei.jpg" width="160" height="160" alt="image2" />
+								<img src="/images/user/lei.jpg" width="160" height="160" alt="image2" />
 								<h4>酆仙深</h4>
 								<p>2016级2班</p>
 								<br>
@@ -18,7 +18,7 @@ $(function () {
 							</li>
 							
 							<li>
-								<img src="images/user/lai.jpg" width="160" height="160" alt="image1">
+								<img src="/images/user/lai.jpg" width="160" height="160" alt="image1">
 								<h4>· Zaychik</h4>
 								<p>2016级2班</p>
 								<br>

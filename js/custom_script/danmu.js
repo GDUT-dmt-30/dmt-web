@@ -207,7 +207,7 @@ $(document).ready(function () {
     //   ]);
 
     // 从后台获取弹幕
-    $.get("php/danmu/query.php", function (data) {
+    $.get("/php/danmu/query.php", function (data) {
         // console.log(data)
         var danmu_from_sql = eval(data);
         for (var i = 0; i < danmu_from_sql.length; i++) {

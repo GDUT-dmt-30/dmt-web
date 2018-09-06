@@ -157,7 +157,7 @@
 					l()
 				});
 				if (e.pagenavi) {
-					$(e.modulid).append('<div class="fnt-top-arrow" style="background:url(img/fnt-arrows-' + e.pagenavistyle + '.png) top no-repeat;"></div><div class="fnt-bottom-arrow" style="background:url(img/fnt-arrows-' + e.pagenavistyle + '.png) bottom no-repeat;"></div>');
+					$(e.modulid).append('<div class="fnt-top-arrow" style="background:url(/img/fnt-arrows-' + e.pagenavistyle + '.png) top no-repeat;"></div><div class="fnt-bottom-arrow" style="background:url(/img/fnt-arrows-' + e.pagenavistyle + '.png) bottom no-repeat;"></div>');
 					$(e.modulid).css({
 						height: e.itemheight + 200,
 						padding: "20px 10px",
