@@ -33,15 +33,10 @@ for ($i = 0; $i < $result->num_rows; $i++) {
     if($i%5 == 4){
         echo     "<div class='text-center' style='color:black;'> - " . ceil($i/5) . " - </div>";
         echo     "</div>";
-    }
-    
-    if($i == $result->num_rows-1){
+    }else if($i == $result->num_rows-1){
         echo     "<div class='text-center' style='color:black;bottom:5px;left: 47.5%;position:absolute;'> - " . ceil($i/5) . " - </div>";
         echo     "</div>";
     }
 
-
-    // echo $_name . ' - ' . $_comment . ':';
-    // echo $_addtime . '  <br>';
 }
 // echo  "</div>";
