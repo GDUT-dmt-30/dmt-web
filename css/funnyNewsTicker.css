@@ -19,8 +19,8 @@
 .funnyNewsTicker>ul>li>.fnt-info span{position:absolute; left:80px; right:30px; text-align:center; opacity:0.4; z-index:0; font-size:13px; cursor:default;}
 .funnyNewsTicker>div{width:50px; height:30px; cursor:pointer; position:absolute; opacity:0.3;}
 .funnyNewsTicker>div:hover{opacity:1;}
-.funnyNewsTicker>div.fnt-top-arrow{top:0; background:url(/img/fnt-arrows-black.png) top no-repeat;}
-.funnyNewsTicker>div.fnt-bottom-arrow{bottom:0; background:url(/img/fnt-arrows-black.png) bottom no-repeat;}
+.funnyNewsTicker>div.fnt-top-arrow{top:0; background:url(../img/fnt-arrows-black.png) top no-repeat;}
+.funnyNewsTicker>div.fnt-bottom-arrow{bottom:0; background:url(../img/fnt-arrows-black.png) bottom no-repeat;}
 
 .funnyNewsTicker .fnt-top0{-ms-transform: scale(0.80); -webkit-transform: scale(0.85); transform: scale(0.85); opacity:0.85; top:0; z-index:1; display:block;}
 .funnyNewsTicker .fnt-top1{-ms-transform: scale(0.87); -webkit-transform: scale(0.9); transform: scale(0.9); opacity:0.9; top:20px; z-index:2; display:block;}
