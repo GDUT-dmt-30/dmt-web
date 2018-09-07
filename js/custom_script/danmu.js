@@ -191,7 +191,7 @@ $(document).ready(function () {
         var time = $('#danmu').data("nowTime")+1;
         var size = 1;
         var text_obj='{ "text":"'+text+'","color":"'+color+'","size":"'+size+'","position":"'+position+'","time":'+time+'}';
-        $.post("php/danmu/stone.php",{danmu:text_obj});
+        $.post("../php/danmu/stone.php",{danmu:text_obj});
         // var text_obj='{ "text":"'+text+'","color":"'+color+'","size":"'+size+'","position":"'+position+'","time":'+time+',"isnew":""}';
         var new_obj=eval('('+text_obj+')');
 
@@ -207,7 +207,7 @@ $(document).ready(function () {
     //   ]);
 
     // 从后台获取弹幕
-    $.get("/php/danmu/query.php", function (data) {
+    $.get("../php/danmu/query.php", function (data) {
         // console.log(data)
         var danmu_from_sql = eval(data);
         for (var i = 0; i < danmu_from_sql.length; i++) {

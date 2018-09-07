@@ -101,7 +101,7 @@ $(document).ready(function () {
         }
     }
 
-    xmlhttp.open("GET", "/php/comment/view.php", true);
+    xmlhttp.open("GET", "../php/comment/view.php", true);
 
     xmlhttp.send();
 
@@ -139,7 +139,7 @@ $(document).ready(function () {
         }
         let nickname = $(".nickname").val();
         let text = $(".textarea").val();
-        let message = "/php/comment/server.php?" + "user=" + nickname + "&comment=" + text;
+        let message = "../php/comment/server.php?" + "user=" + nickname + "&comment=" + text;
         xmlhttp.open("GET", message, true);
 
         xmlhttp.send();
