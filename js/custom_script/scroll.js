@@ -3,9 +3,12 @@ $(document).ready(function () {
     jQuery(document).ready(function ($) {
 
         //默认滚动在最上面
-        // $('body,html').animate({scrollTop: 0},0,function(){
-        // 	window.location.hash = 1;
-        // })
+        setTimeout(() => {
+            $('body,html').animate({scrollTop: 0},0,function(){
+                window.location.hash = 1;
+            })
+        }, 1000);
+        
 
 
         // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -42,7 +45,7 @@ $(document).ready(function () {
 
             $(this).children('div').css({ "padding": 0 });
 
-            $(this).children('div').css({ "padding-bottom": $(window).height() - $(this).children('div').height() - 200 });
+            $(this).children('div').css({ "padding-bottom": $(window).height() - $(this).children('div').height() - 100 });
 
             $(this).children('div').css({ "padding-top": 200 });
         })
