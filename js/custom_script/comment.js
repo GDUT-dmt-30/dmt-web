@@ -97,6 +97,8 @@ $(document).ready(function () {
 
             document.getElementById("num").innerHTML = words[0];
             document.getElementById("bb-bookblock").innerHTML = result;
+            document.getElementById('userName').value='';
+            document.getElementById('txt').value='';
             Page.init();
         }
     }
@@ -134,6 +136,8 @@ $(document).ready(function () {
                 console.log(xmlhttp.responseText);
                 document.getElementById("num").innerHTML = words[0];
                 document.getElementById("bb-bookblock").innerHTML = result;
+                document.getElementById('userName').value='';
+                document.getElementById('txt').value='';
                 Page.init();
             }
         }

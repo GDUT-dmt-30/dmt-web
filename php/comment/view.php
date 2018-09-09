@@ -34,7 +34,7 @@ for ($i = 0; $i < $result->num_rows; $i++) {
         echo     "<div class='text-center' style='color:black;'> - " . ceil($i/5) . " - </div>";
         echo     "</div>";
     }else if($i == $result->num_rows-1){
-        echo     "<div class='text-center' style='color:black;bottom:5px;left: 47.5%;position:absolute;'> - " . ceil($i/5) . " - </div>";
+        echo     "<div class='text-center' style='color:black;bottom:5px;left: 47.5%;position:absolute;'> - " . ceil(($i+1)/5) . " - </div>";
         echo     "</div>";
     }
 

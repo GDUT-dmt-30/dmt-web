@@ -10,10 +10,11 @@ $(document).ready(function () {
             $(".shang_payimg").css("border-color", "#22aa3b");
         $("#shang_pay_txt").text(dataid == "alipay" ? "支付宝" : "微信");
     });
-    function dashangToggle() {
+    
+});
+function dashangToggle() {
 
-        $(".hide_box").fadeToggle();
-        $(".shang_box").fadeToggle();
+    $(".hide_box").fadeToggle();
+    $(".shang_box").fadeToggle();
 
-    }
-})
+}
