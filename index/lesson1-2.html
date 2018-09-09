@@ -1,0 +1,1296 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>大一上学期</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- css files -->
+	<!-- <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /> -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../js/gooey/gooey.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../js/slide/srs.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/funnyNewsTicker.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/baraja.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/bookblock.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!-- /css files -->
+
+
+	<!-- js files -->
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+	<!-- js for gallery -->
+	<script src="../js/darkbox.js"></script>
+	<!-- /js for gallery -->
+
+	<!-- /js for back to top -->
+	<!-- js for nav-smooth scroll -->
+	<script src="../js/modernizr.custom.26633.js"></script>
+
+	<!-- 固定导航栏 -->
+	<script src="../js/stickUp.js"></script>
+
+	<!-- resize监听元素 -->
+	<script src="../js/resize.js"></script>
+
+	<!-- 右下角插件脚本 -->
+	<script src="../js/gooey/gooey.min.js"></script>
+
+
+	<!-- 滚动插件 -->
+	<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdn.bootcss.com/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+	<!-- 按钮弹出插件 -->
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.min.js"></script>
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.ui.min.js"></script>
+	<script src="../js/quttons/Quttons.js"></script>
+
+	<!-- 路径弹窗 -->
+	<script src="https://cdn.bootcss.com/cta.js/0.3.2/cta.min.js"></script>
+
+	<!-- three.js 背景 -->
+	<script src="https://cdn.bootcss.com/three.js/71/three.min.js"></script>
+
+	<script src="../js/threejs line/projector.js"></script>
+	<script src="../js/threejs line/canvas-renderer.js"></script>
+
+	<script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
+
+	<script src="../js/threejs line/3d-lines-animation.js"></script>
+
+	<script src="../js/threejs line/color.js"></script>
+
+	<!-- 分享 -->
+	<link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+	<!-- 复制粘贴 -->
+	<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+
+	<!-- 滑竿 -->
+	<script src="../js/slide/srs.js"></script>
+
+	<!-- 取色器 -->
+	<script src="https://cdn.bootcss.com/spectrum/1.8.0/spectrum.min.js"></script>
+	<link href="https://cdn.bootcss.com/spectrum/1.8.0/spectrum.min.css" rel="stylesheet">
+
+	<!-- 弹幕 -->
+	<script src="../js/danmu/jquery.danmu.min.js"></script>
+
+	<!-- 评论滚动 -->
+	<script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<script src="../js/ticker/ticker.js"></script>
+
+	<!-- baraja 发牌效果 -->
+	<script src="../js/Baraja/modernizr.custom.79639.js"></script>
+	<script src="../js/Baraja/jquery.baraja.js"></script>
+
+	<!-- BookBLock 翻页效果 -->
+	<script src="../js/BookBLock/modernizr.custom.js"></script>
+	<script src="../js/BookBLock/jquery.bookblock.min.js"></script>
+
+	<!-- 页面中的相关逻辑脚本 -->
+	<link href="../css/ctaModal.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/socialShare.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/gooeyMenu.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="../js/custom_script/colorPicker.js"></script>
+	<script src="../js/custom_script/linkUs.js"></script>
+	<script src="../js/custom_script/socialShare.js"></script>
+	<script src="../js/custom_script/danmu.js"></script>
+	<script src="../js/custom_script/ticker.js"></script>
+	<script src="../js/custom_script/Baraja.js"></script>
+	<script src="../js/custom_script/comment.js"></script>
+
+	<style>
+		body,
+		td,
+		th {
+			font-family: "Microsoft Yahei";
+			background-color: black;
+			/* overflow: hidden; */
+		}
+
+		.navbar .container {
+
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+
+		}
+
+		.isStuck {
+			left: 0px;
+			width: 100%;
+		}
+
+		@media (min-width: 1080px) {
+			.container {
+				width: 98rem;
+			}
+		}
+
+		@media (max-width: 1080px) {
+			.nav>li>a {
+				padding: 10px 5.1rem;
+			}
+		}
+
+		.accordion-heading {
+			margin-left: 0%;
+			padding: 0px 0 20px;
+		}
+
+		#features .ac a:hover {
+			color: #A29D26;
+		}
+
+	</style>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div class="navbar-wrapper stuckMenu">
+	<div class="container slide">
+		<nav class="navbar navbar-inverse navbar-static-top cl-effect-20">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+							aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">大二课程概况</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="#service"><span data-hover="课程概况">课程概况</span></a></li>
+						<li><a href="#service"><span data-hover="方向概况">方向概况</span></a></li>
+						<li><a href="#about"><span data-hover="经验分享">经验分享</span></a></li>
+						<!-- <li><a href="#testimonials"><span data-hover="鸣谢">鸣谢</span></a></li> -->
+						<li><a href="#contact"><span data-hover="评论">联系我们</span></a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<!-- /About Section -->
+<!-- Services Section -->
+
+<div>
+	<section class="our-services slide" id="service">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+			<h3 class="text-center slide">大二 课程概况</h3>
+			<div>
+				<div id="features">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 centered">
+								<!-- ACCORDION -->
+								<div class="navbar accordion ac" id="accordion2">
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_1">网页设计基础</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_2">动画交互技术</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_3">C++</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_4">数字媒体基础</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_5">线性代数</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_6">三维动画技术</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_7" style="padding:inherit;">数据结构及算法基础</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class=" slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_8" style="padding:inherit;">计算机网络</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class=" slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_9" style="padding:inherit;">计算机图形学</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class=" slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_10" style="padding:inherit;">java程序设计</a>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="accordion-group">
+
+										<div class="nav accordion-heading text-center">
+											<div class=" slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+												<a href="#lesson_11" style="padding:inherit;">形势政策</a>
+											</div>
+										</div>
+
+									</div>
+
+
+								</div><!-- Accordion -->
+							</div>
+						</div>
+					</div>
+					<!--/ .container -->
+					</h3>
+					<!--/ #features -->
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<section class="about-us" id="lesson_1" style="background:url(../images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;padding-bottom: 50%;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">网页设计基础</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：魏尊亮 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">专业简介：HTML、css的基础知识 </p>
+
+
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.目前最简单的其中一科
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.课上讲的都挺简单的，自己看书一下子就能懂，实际上应用的话就要自己去找书自学了
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.这门课应该算是基础吧，挺有用的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.对于网页前端工作者，这是一门必修课
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.喜欢走前端的同学别错过，JS不会教，想做动效可以自学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.老师讲课比较闷，建议自学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.emmmm一直在睡觉，内容简单易上手
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.emm当时学的时候主要看书自学，老师没怎么讲js
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.这个老师更水了
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.实用性还可以
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_2" style="background:url(../images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">动画交互技术</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：莫春柳 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：动画软件flash的使用 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.额，多找找相关资料吧，不容易挂科
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.老师讲的好，学的时候做作业也是挺有意思的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.感觉一般，因为这门课主要使用的平台是flash ,然而flash貌似快被代替了，但是起码不能挂科
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.老师很尽责，但是课程一般
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.诶 没什么感觉，创作性很大
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.春柳姐姐讲课挺好的，课程也带感。课设不能敷衍
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.挺有趣的科目，自己需要多加练习
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.as3.0可以了解一下，和其他编程语言差不多，不过现在flash动画这种感觉应用不多
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.做作品还是要脚踏实地从基础开始入手
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.有点难
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_3" style="background:url(../images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">C++</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：莫建清 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：内容基本如课名 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.非常重要，面向对象编程的启蒙课，许多行业的通用语言，底层开发，算法研究必学！！
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.老莫认人很厉害的。他c++讲得确实挺不错
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.嗯！尽早自己预习下课之后一定要巩固知识
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.莫老师教的挺不错的，C++课上也学到了很多知识
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.特别难！！(明明是你学得差)最好提前学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.老师讲的挺好的，建议能多点c++的项目实战
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.努力就不会挂
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.超级棒
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.很重要，想走虚幻4编程这个要学好，不过如果是莫老教的话，那你大概率秃头，最好能自己先自学一下，因为莫老一来就是类与对象，不跟你多BB
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.理解了就好办了
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_4" style="background:url(../images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">数字媒体基础</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：张艳喜</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：视频、音频等的基础知识，注重影视方向 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.拍视频真的好玩，不过pr，ae，au这些都得自学，不排除你们用会声会影，或者arctime什么的，我只是啊逗比家族用着顺手
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.希望从事影视后期或者平面设计的同学能了解一下
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.拍摄视频作业很有趣哈哈哈
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.最最简单的
+
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.Just so so
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.等一下我想不起来这个课上了什么
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.讲课比较闷，老师上课关窗帘很困，老师课堂互动不高，常常自问自答
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.(这是那个拍短片的？)就看你有没有创意了
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.理论没什么用
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.还不错
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_5" style="background:url(../images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">线性代数</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：看具体安排</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：内容即如课名 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.随缘课，上课有听压力不大，后面矩阵变换那一块上计算机图形学有点用
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.跟着老师走就ok
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.一开始还挺害怕挂科的，后面发现其实挺好玩的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.努力就不会挂
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.比较好理解，线代对以后图形学和其他学科都挺有帮助的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.非常重要，不论是图形学编程、引擎/游戏开发还是CG工作者，线性代数是一门必修课！
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.老师讲话有点绕，可能会听不懂，偶尔会讲题外话讲得太带劲了拖堂
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.emmmm想睡觉，考试看天分
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.简单，记住课本里的公式定理就好
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.感觉没什么用
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_6" style="background:url(../images/map/4.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">三维动画技术</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：冯开平</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：主要内容就是三维软件3dmax的使用 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.其实还蛮有意思
+							</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.实践真的出技能包
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.我们这届排课太差，不能边学边做感觉挺难学到东西，
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.冯老的课其实可以不听，他那几个实验做了，3DSmax的基本操作也就都懂了
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.实操性较强，但是基本靠自学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.还行的那种难
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.好好学，就这样吧
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.全靠自学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.还可以，有点意思
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.一般
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_7" style="background:url(../images/map/5.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">数据结构及算法基础</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：莫建清</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：编程进阶课程，主要是学习数据存储和调用的算法知识</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.超级无敌爆炸螺旋难
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.莫老师教的一如既往的棒
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.再一次深度认识C语言，最后莫老的导航系统能早做就早做，后面和三维动画技术还有数媒实训叠在一起，大概可以熬一周的夜吧
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.受益匪浅
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.老莫讲得不错，但是建议课外也花点功夫
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.非常重要，对于读研深修算法工程师和程序优化思想的启蒙
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.有逻辑性，老师讲的特别好
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.好好学
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.大作业一定不能拖
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.老师人很好
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_8" style="background:url(../images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">计算机网络</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：王文彦</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：计算机网络原理和构成的基础知识 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.老师讲得挺好的也比较容易懂，缺点是喜欢讲课程以外的东西（但是我觉得听着挺爽的）
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.王老对这门课是真的随缘，课程内容基本都忘了，对他的传奇一生倒是印象深刻，这门课讲了网络连接的几个层，对网络感兴趣的同学可以了解一下
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.应该是蛮重要的一个学习内容，可是太难啃
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.比较重要，了解通讯协议的通讯原理对服务器开发或者网络通讯开发来说是必须的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.网络的基础知识，后面挺实用的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.很厉害但没兴趣
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.考试就看你人品
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.很高深
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.爽到
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.还是蛮难的，提前有点网络基础会比较好一点，以后如果后台开发挺有帮助应该
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_9" style="background:url(../images/map/2.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">计算机图形学</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：张晓晨</p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：上课内容基本如课名 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.比较划水，深入学习的话也是挺不错的
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.老师讲了跟没讲似的，课程难，但考核比较松
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.内容比较难懂，需要多看书多操作
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.非常重要，对于从事游戏/引擎开发和CG动画工作者
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.认真上课就好了8
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.迷迷糊糊
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.老师很水
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.这门课有点意思，可以用c++实现各种图形骚操作
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.算法高深
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.不算特别难
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_10" style="background:url(../images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;padding-bottom: 50%;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">java程序设计</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：韦宇炜 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：java语言的基础知识 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.对于从事安卓端应用开发者来说必修
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.老师讲课比较无聊，前期课程和c,c++知识的重合度很高，考试比较难高分
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.理论课，练习时间少
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.自学比较有前途
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.会赚钱的老师教的课程
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.韦老师讲的太基础，这种课应该大一就出现，想走安卓开发的同学可以学深一点
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.课程比较容易，老师有点划水
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.语言挺简单的
+
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.容易上手
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.好好学
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-us" id="lesson_11" style="background:url(../images/map/1.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;padding-bottom: 50%;">
+		<h3 class="text-center slideanim" style="color:white;font-size:5rem;">形势政策</h3>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">授课老师：看具体安排 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">课程简介：这是一门政治思想课 </p>
+		<p class="text-center slideanim" style="color:white;font-size:2rem;">来看看小伙伴们怎么评价这门课程</p>
+
+		<!-- 滚动评论 -->
+		<div class="slideanim" style="width:50%; margin:0 auto; box-sizing:border-box;">
+
+			<div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing">
+				<ul>
+					<li>
+						<div class="fnt-content">1.这门课感觉就是凑学分。。。
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">2.不知所以
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">3.属于挺学校的一门课
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">4.考试求过就行了
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">5.爱国
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">6.不挂科就行(ಡωಡ)
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">7.水
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">8.一个学期才三节课有什么好评价的
+
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">9.认真看看(•ิ_•ิ)?
+						</div>
+					</li>
+					<li>
+						<div class="fnt-content">10.不了
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="comment" class="footer our-testimonials " style="background:url(/images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+	<div style="background-color:rgba(1, 1, 1, 0.3);padding-top: 100px;padding-bottom: 30px;">
+		<h3 id="thanks" class="accordion-toggle btn-outline1 text-center slideanim collapsed" data-toggle="collapse"
+			data-parent="#accordion2" href="#collapseContainer">鸣谢参与人员</h3>
+		<div id="collapseContainer" class="accordion-body collapse container">
+
+
+			<ul id="baraja-el" class="baraja-container">
+				<li>
+					<img src="../images/user/tim.jpg" width="160" height="160" alt="image1">
+					<h4>智伤帝</h4>
+					<p>2016级2班</p>
+					<br>
+					<p>贡献：站长</p>
+					<br>
+					<p>方向： CG 前端</p>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					<!-- 打赏按钮 -->
+					<div class="copyright slideanim">
+						<div class="page-reward">
+							<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+							<div class="hide_box"></div>
+							<div class="shang_box">
+								<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+								<div class="shang_tit">
+									<p>
+
+									</p>
+								</div>
+								<div class="shang_payimg">
+									<img src="../img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+								</div>
+								<div class="pay_explain">
+
+								</div>
+								<div class="shang_payselect">
+
+									<div class="pay_item checked" data-id="alipay">
+										<span class="radiobox"></span>
+										<span class="pay_logo"><img src="../img/alipay.png" alt="支付宝" /></span>
+									</div>
+
+
+									<div class="pay_item" data-id="wechat">
+										<span class="radiobox"></span>
+										<span class="pay_logo"><img src="../img/weixin.png" alt="微信" /></span>
+									</div>
+
+								</div>
+								<div class="shang_info">
+									<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 column">
+					<!-- 联系按钮 -->
+					<div class="copyright slideanim">
+						<div class="page-reward">
+							<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">开</a></p>
+							<div class="hide_box"></div>
+							<div class="shang_box">
+								<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+								<div class="shang_tit">
+									<p>
+
+									</p>
+								</div>
+								<div class="shang_payimg">
+									<img src="../img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+								</div>
+								<div class="pay_explain">
+
+								</div>
+								<div class="shang_payselect">
+
+									<div class="pay_item checked" data-id="alipay">
+										<span class="radiobox"></span>
+										<span class="pay_logo"><img src="../img/alipay.png" alt="支付宝" /></span>
+									</div>
+
+
+									<div class="pay_item" data-id="wechat">
+										<span class="radiobox"></span>
+										<span class="pay_logo"><img src="../img/weixin.png" alt="微信" /></span>
+									</div>
+
+								</div>
+								<div class="shang_info">
+									<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<hr>
+		<h2 class="text-center" style="color:aliceblue" >留下你的建议 - 共铸数技新未来</h2>
+
+		<div class="container">
+			<div id="gitalk-container">
+				<div class="gt-container">
+					<div class="gt-meta">
+                            <span class="gt-counts">
+
+                                <span id="num"></span>
+
+
+                                条评论</span>
+
+					</div>
+					<div class="gt-header">
+						<div class="gt-header-comment">
+							<textarea id="userName" class="gt-header-textarea nickname" placeholder="昵称" style="overflow: hidden; word-wrap: break-word; resize: none;min-height: 3em;margin: 1em 0;width: 120px;height:12px"></textarea>
+							<textarea id="txt" class="gt-header-textarea textarea" placeholder="说点什么" style="overflow: hidden; word-wrap: break-word; resize: none; height: 72px;"></textarea>
+							<div class="gt-header-controls">
+								<button class="gt-btn gt-btn-public">
+									<span class="gt-btn-text">评论</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div id="bb-bookblock" class="bb-bookblock" style="z-index:inherit">
+
+
+					</div>
+					<nav class="bb-nav text-center">
+						<a id="bb-nav-first" href="#">
+							<i class="fa fa-step-backward" aria-hidden="true" style="
+								padding-left: 5px;
+							"></i>
+						</a>
+						<a id="bb-nav-prev" href="#">
+							<i class="fa fa-play fa-flip-horizontal " aria-hidden="true" style="
+								margin-right: 5px;
+								padding-right: 5px;
+							"></i>
+						</a>
+						<a id="bb-nav-next" href="#">
+							<i class="fa fa-play" aria-hidden="true" style="
+								margin-left: 10px;
+							"></i>
+						</a>
+						<a id="bb-nav-last" href="#">
+							<i class="fa fa-step-forward" aria-hidden="true" style="
+								padding-left: 2.5px;
+								padding-right: 2.5px;
+							"></i>
+						</a>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<div class="copyright">
+			<p>Copyright &copy; 2018 广东工业大学 - 数字媒体技术 <br><a class="contactUs">@联系我们</a></p>
+		</div>
+
+		<div class="our-contacts slideanim">
+			<h3 class="text-center slideanim">联系我们</h3>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<form role="form" action="../php/contact/server.php" method="POST">
+							<div class="row" style="color:black;">
+								<div class="form-group col-lg-6 slideanim">
+									<input type="text" class="form-control user-name" name="name" placeholder="你的名字"
+										   required />
+								</div>
+								<div class="form-group col-lg-6 slideanim">
+									<input type="email" class="form-control mail" name="email" placeholder="你的邮箱"
+										   required />
+								</div>
+								<div class="form-group col-lg-12 slideanim">
+									<input type="tel" class="form-control pno" name="subject" placeholder="标题"
+										   required />
+								</div>
+								<div class="clearfix"></div>
+								<div class="form-group col-lg-12 slideanim">
+                                        <textarea class="form-control" rows="6" name="message" 　placeholder="内容"
+												  required></textarea>
+								</div>
+								<!-- <input name="website" placeholder="lesson_1" style="display:none"> -->
+								<div class="form-group col-lg-12 slideanim">
+									<button type="submit" class="btn-outline1">提交</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ************************************** -->
+<!-- **************右下角菜单*************** -->
+<!-- ************************************** -->
+
+<!-- /Footer Section -->
+<!-- Back To Top -->
+<nav id="gooey-upper" style="position:fixed;bottom:1rem;right:6.5rem;z-index: 11;">
+	<!-- <nav id="gooey-upper" style="position:fixed;bottom:10rem;right:15.5rem;"> -->
+	<input type="checkbox" class="menu-open" name="menu-open1" id="menu-open1" />
+	<label class="open-button" for="menu-open1" style="z-index:1">
+		<span class="burger burger-1"></span>
+		<span class="burger burger-2"></span>
+		<span class="burger burger-3"></span>
+	</label>
+
+	<a class="topBtn gooey-menu-item">
+		<i class="fa fa-chevron-up fa-2x"></i>
+	</a>
+
+	<a href="#h-spaced-menu" class="gooey-menu-item">
+		<div id="setPos_setting">
+			<div id="qutton_setting" class='qutton fa fa-cog fa-2x '>
+				<div class="qutton_dialog" id="settingDialog">
+					<div style="padding-top:1rem;">弹幕透明度</div>
+					<input name="opacity" placeholder="0 - 100" type="number" min="0" max="100" step="1" value="100"
+						   data-color="rgb(73, 138, 242)" class="srs">
+				</div>
+			</div>
+		</div>
+
+	</a>
+
+	<a class="gooey-menu-item">
+		<i id="danmuShow" class="fa fa-eye-slash fa-2x"></i>
+	</a>
+
+	<a class="gooey-menu-item">
+
+		<div id="setPos">
+			<div id="qutton_upload" class='qutton fa fa-keyboard-o fa-2x '>
+
+				<div class="qutton_dialog" id="uploadDialog">
+					<div class="urlField">
+						<input type="text" id="fileUrl" placeholder="Enter URL">
+						<select name="position" id="position">
+							<option value="0">滚动</option>
+							<option value="1">顶端</option>
+							<option value="2">底端</option>
+						</select>
+						<input id='colorpicker' class="awesome">
+						<button id="button_basic_upload"> 发弹幕</button>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</a>
+
+	<a class="bottomBtn gooey-menu-item">
+		<i class="fa fa-chevron-down fa-2x"></i>
+	</a>
+
+
+	<a class="gooey-menu-item">
+
+		<div class="ctaTile fa fa-link fa-2x" data-cta-target=".js-ctaModal-3" data-disable-scroll=true style="height: 0px"></div>
+	</a>
+
+</nav>
+
+<!-- 弹幕层 -->
+<div id="danmu"></div>
+
+<!-- 分享层 -->
+<div class="js-ctaModal-3  ctaModal" style="padding:0px;overflow:hidden;z-index: 11">
+	<span class="ctaModal-close-btn fa fa-close fa-2x "></span>
+
+	<div class="canvas-wrap" style="height:100%;width:100%">
+
+		<div id="canvas" class="gradient"></div>
+		<div class="share-component" data-initialized="true" data-wechat-qrcode-helper="<p>扫一下二维码</p><p>便可将网站分享至朋友圈</p>">
+			<a href="#" class="social-share-icon icon-weibo"></a>
+			<a href="#" class="social-share-icon icon-qq"></a>
+			<a href="#" class="social-share-icon icon-qzone"></a>
+			<a href="#" class="social-share-icon icon-douban"></a>
+			<a href="#" class="social-share-icon icon-wechat"></a>
+			<a href="#" class="social-share-icon icon-google"></a>
+			<a href="#" class="social-share-icon icon-facebook"></a>
+			<a href="#" class="social-share-icon icon-twitter"></a>
+			<a href="#" class="social-share-icon icon-heart"></a>
+		</div>
+
+
+	</div>
+
+	<!-- 复制成功提示 -->
+	<div id="shareCopy" class="row clearfix" style="position:absolute;left:20%;top:0px;width: 60%;">
+		<div class="col-md-12 column">
+			<div class="alert alert-success alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+				<h5>
+					<div style="text-align:center;margin-left:6%;">
+						<strong>网页地址复制成功！</strong>
+					</div>
+				</h5>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+
+</html>

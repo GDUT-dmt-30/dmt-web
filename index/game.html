@@ -1,0 +1,673 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>数字媒体技术</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+
+	<!-- css files -->
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/js/gooey/gooey.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/js/slide/srs.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/funnyNewsTicker.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/baraja.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/bookblock.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!-- /css files -->
+
+
+	<!-- js files -->
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+	<!-- js for gallery -->
+	<script src="/js/darkbox.js"></script>
+	<!-- /js for gallery -->
+
+	<!-- /js for back to top -->
+	<!-- js for nav-smooth scroll -->
+	<script src="/js/modernizr.custom.26633.js"></script>
+
+	<!-- 固定导航栏 -->
+	<script src="/js/stickUp.js"></script>
+
+	<!-- resize监听元素 -->
+	<script src="/js/resize.js"></script>
+
+	<!-- 右下角插件脚本 -->
+	<script src="/js/gooey/gooey.min.js"></script>
+
+
+	<!-- 滚动插件 -->
+	<script src="https://cdn.bootcss.com/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdn.bootcss.com/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+	<!-- 按钮弹出插件 -->
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.min.js"></script>
+	<script src="https://cdn.bootcss.com/velocity/1.5.1/velocity.ui.min.js"></script>
+	<script src="/js/quttons/Quttons.js"></script>
+
+	<!-- 路径弹窗 -->
+	<script src="https://cdn.bootcss.com/cta.js/0.3.2/cta.min.js"></script>
+
+	<!-- three.js 背景 -->
+	<script src="https://cdn.bootcss.com/three.js/71/three.min.js"></script>
+
+	<script src="/js/threejs line/projector.js"></script>
+	<script src="/js/threejs line/canvas-renderer.js"></script>
+
+	<script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
+
+	<script src="/js/threejs line/3d-lines-animation.js"></script>
+
+	<script src="/js/threejs line/color.js"></script>
+
+	<!-- 分享 -->
+	<link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+	<!-- 复制粘贴 -->
+	<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
+
+	<!-- 滑竿 -->
+	<script src="/js/slide/srs.js"></script>
+
+	<!-- 取色器 -->
+	<script src="https://cdn.bootcss.com/spectrum/1.8.0/spectrum.min.js"></script>
+	<link href="https://cdn.bootcss.com/spectrum/1.8.0/spectrum.min.css" rel="stylesheet">
+
+	<!-- 弹幕 -->
+	<script src="/js/danmu/jquery.danmu.min.js"></script>
+
+	<!-- 评论滚动 -->
+	<script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<script src="/js/ticker/ticker.js"></script>
+
+	<!-- baraja 发牌效果 -->
+	<script src="/js/Baraja/modernizr.custom.79639.js"></script>
+	<script src="/js/Baraja/jquery.baraja.js"></script>
+
+	<!-- BookBLock 翻页效果 -->
+	<script src="/js/BookBLock/modernizr.custom.js"></script>
+	<script src="/js/BookBLock/jquery.bookblock.min.js"></script>
+
+	<!-- 页面中的相关逻辑脚本 -->
+	<link href="/css/ctaModal.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/socialShare.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/gooeyMenu.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="/js/custom_script/colorPicker.js"></script>
+	<script src="/js/custom_script/linkUs.js"></script>
+	<script src="/js/custom_script/socialShare.js"></script>
+	<script src="/js/custom_script/danmu.js"></script>
+	<script src="/js/custom_script/ticker.js"></script>
+	<script src="/js/custom_script/Baraja.js"></script>
+	<script src="/js/custom_script/comment.js"></script>
+	<script src="/js/custom_script/scroll.js"></script>
+	<script src="/js/custom_script/dashang.js"></script>
+	<script src="/js/custom_script/gooey.js"></script>
+	<script src="/js/custom_script/stuckUpMenu.js"></script>
+
+	<style>
+		body,
+		td,
+		th {
+			font-family: "Microsoft Yahei";
+			background-color: black;
+			overflow-x: hidden;
+		}
+
+		.navbar .container {
+
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 20px;
+
+		}
+
+		.isStuck {
+			left: 0px;
+			width: 100%;
+		}
+
+		/* stuck Menu 样式 */
+		@media (min-width: 1080px) {
+			.container {
+				width: 98rem;
+			}
+		}
+
+		@media (max-width: 992px) {
+			.nav>li>a {
+				padding: 10px 4rem;
+			}
+
+
+		}
+
+		@media (min-width: 768px){
+			.navbar-nav{
+				margin-left:  50px;
+			}
+		}
+		@media (min-width: 992px){
+			.navbar-nav{
+				margin-left:  0px;
+			}
+		}
+
+		.accordion-heading {
+			margin-left: 0%;
+			padding: 0px 0 20px;
+		}
+
+		#features .ac a:hover {
+			color: #A29D26;
+		}
+
+	</style>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<div class="navbar-wrapper stuckMenu">
+		<div class="container slide">
+			<nav class="navbar navbar-inverse navbar-static-top cl-effect-20">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">游戏开发</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse navbar-right">
+						<ul class="nav navbar-nav">
+							<li><a href="#service"><span data-hover="课程概况">方向概况</span></a></li>
+							<li><a href="#about"><span data-hover="经验之谈">经验之谈</span></a></li>
+							<!-- <li><a href="#testimonials"><span data-hover="鸣谢">鸣谢</span></a></li> -->
+							<li><a href="#contact"><span data-hover="评论">评论</span></a></li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- /About Section -->
+	<!-- Services Section -->
+
+	<div>
+		<section class="our-services slide" id="service" style="background:url(../images/game/head2.jpg);background-size: 100%;">
+			<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+				<h3 class="text-center slide">游戏开发 - 方向概况</h3>
+				<p class="text-center slide" style="color:white">借助成熟的游戏开发引擎，我们可以制作出独一无二的游戏世界。</p>
+				<div>
+					<div id="features">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 centered">
+									<!-- ACCORDION -->
+									<div class="navbar accordion ac" id="accordion2">
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_1">Unity</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_2">虚幻引擎</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_3">寒霜引擎</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_4">Cocos</a>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="accordion-group">
+
+											<div class="nav accordion-heading text-center">
+												<div class="slide btn-outline1 " style="margin-top:0px;width:35rem;margin:auto;">
+													<a href="#lesson_5">CryEngine</a>
+												</div>
+											</div>
+
+										</div>
+
+										</div>
+
+									</div><!-- Accordion -->
+								</div>
+							</div>
+						</div>
+						<!--/ .container -->
+						</h3>
+						<!--/ #features -->
+					</div>
+		</section>
+	</div>
+
+	<section class="about-us" id="lesson_1" style="background:url(/images/game/unity.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:270px 0;padding-bottom: 50%;">
+            <h3 class="text-center slideanim" style="color:white;font-size:5rem;">
+            <img src="../images/game/unity-logo.png" style="width:100px;height:100px;">    Unity
+            </h3>
+            <p class="text-center slideanim" style="color:white;font-size:2rem;">Unity3D是由Unity Technologies开发的
+                <br> 一个让玩家轻松创建诸如三维视频游戏、建筑可视化、实时三维动画等类型互动内容的
+                <br> 多平台的综合型游戏开发工具
+                <br> 是一个 <b> 全面整合的专业游戏引擎</b>。</p>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">著名作品有：《炉石传说》，《王者荣耀》……</p>
+
+	</section>
+
+	<section class="about-us" id="lesson_2" style="background:url(/images/game/ue.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+			<h3 class="text-center slideanim" style="color:white;font-size:5rem;">
+				<img src="../images/game/ue-logo.png" style="width:100px;height:100px;">	虚幻引擎
+			</h3>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">虚幻（Unreal）游戏引擎是一个面向下一代游戏机和DirectX 9个人电脑的完整的游戏开发平台
+			<br>	提供了游戏开发者需要的 <b> 大量的核心技术、数据生成工具和基础支持 </b>。
+			</p>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">著名作品有：《彩虹六号》，《质量效应》，《绝地求生》……</p>
+
+
+    </section>
+    
+	<section class="about-us" id="lesson_3" style="background:url(/images/game/frostbite.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+			<h3 class="text-center slideanim" style="color:white;font-size:5rem;">
+				<img src="../images/game/frostbite-logo.png" style="width:100px;height:100px;">寒霜引擎
+			</h3>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">寒霜引擎（Frostbite Engine）是瑞典DICE游戏工作室为著名电子游戏产品 <b> 《战地》（Battlefield）</b>系列设计的一款3D游戏引擎。
+				<br> 该引擎从2006年起开始研发，第一款使用寒霜引擎的游戏在2008年问世。 </p>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">著名作品有：《战地》，《极品飞车20：复仇》，《FIFA》…… </p>
+
+	</section>
+
+	<section class="about-us" id="lesson_4" style="background:url(/images/game/cocos.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+			<h3 class="text-center slideanim" style="color:white;font-size:5rem;">
+				<img src="../images/game/cocos-logo.png" style="width:100px;height:100px;">Cocos
+			</h3>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">Cocos是由触控科技推出的游戏开发一站式解决方案，
+				<br> 包含了从新建立项、游戏制作、到 打包上线的全套流程。
+				<br> 开发者可以通过cocos快速生成代码、编辑资源和动画，最终输出 <b> 适合于多个平台的游戏产品。</b></p>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">著名作品有：《梦幻西游手游版》，《我叫MT》，《欢乐斗地主》…… </p>
+
+	</section>
+
+	<section class="about-us" id="lesson_5" style="background:url(/images/game/cryengine.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.2);padding:200px 0;">
+			<h3 class="text-center slideanim" style="color:white;font-size:5rem;">
+				<img src="../images/game/cryengine-logo.png" style="width:200px;height:150px;">CryEngine
+			</h3>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">cryengine3是德国的CRYTEK 公司出品一款对应最新技术DirectX 11的游戏引擎。
+			<br>	采用了和 KILLZONE2 一样的 <b> 延迟渲染 (Deferred Shading) 技术</b>，
+			<br> 在延迟着色的场景渲染中，像素的渲染被放在最后进行，随后在通过多个 buffer 同时输出。</p>
+			<p class="text-center slideanim" style="color:white;font-size:2rem;">著名作品有：《孤岛危机》，《战争前线》，《怪物猎人online》…… </p>
+
+	</section>
+
+
+
+	<section id="comment" class="footer our-testimonials " style="background:url(/images/map/3.jpg) no-repeat;background-position:center;background-attachment:fixed;background-size:cover;">
+		<div style="background-color:rgba(1, 1, 1, 0.3);padding-top: 100px;padding-bottom: 30px;">
+			<h3 id="thanks" class="accordion-toggle btn-outline1 text-center slideanim collapsed" data-toggle="collapse"
+				data-parent="#accordion2" href="#collapseContainer">鸣谢参与人员</h3>
+			<div id="collapseContainer" class="accordion-body collapse container">
+
+
+				<ul id="baraja-el" class="baraja-container">
+					<li>
+						<img src="../images/user/tim.jpg" width="160" height="160" alt="image1">
+						<h4>智伤帝</h4>
+						<p>2016级2班</p>
+						<br>
+						<p>贡献：站长</p>
+						<br>
+						<p>方向： CG 前端</p>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-6 column">
+						<!-- 打赏按钮 -->
+						<div class="copyright slideanim">
+							<div class="page-reward">
+								<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+								<div class="hide_box"></div>
+								<div class="shang_box">
+									<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+									<div class="shang_tit">
+										<p>
+
+										</p>
+									</div>
+									<div class="shang_payimg">
+										<img src="../img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+									</div>
+									<div class="pay_explain">
+
+									</div>
+									<div class="shang_payselect">
+
+										<div class="pay_item checked" data-id="alipay">
+											<span class="radiobox"></span>
+											<span class="pay_logo"><img src="../img/alipay.png" alt="支付宝" /></span>
+										</div>
+
+
+										<div class="pay_item" data-id="wechat">
+											<span class="radiobox"></span>
+											<span class="pay_logo"><img src="../img/weixin.png" alt="微信" /></span>
+										</div>
+
+									</div>
+									<div class="shang_info">
+										<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 column">
+						<!-- 联系按钮 -->
+						<div class="copyright slideanim">
+							<div class="page-reward">
+								<p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">开</a></p>
+								<div class="hide_box"></div>
+								<div class="shang_box">
+									<a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+									<div class="shang_tit">
+										<p>
+
+										</p>
+									</div>
+									<div class="shang_payimg">
+										<img src="../img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+									</div>
+									<div class="pay_explain">
+
+									</div>
+									<div class="shang_payselect">
+
+										<div class="pay_item checked" data-id="alipay">
+											<span class="radiobox"></span>
+											<span class="pay_logo"><img src="../img/alipay.png" alt="支付宝" /></span>
+										</div>
+
+
+										<div class="pay_item" data-id="wechat">
+											<span class="radiobox"></span>
+											<span class="pay_logo"><img src="../img/weixin.png" alt="微信" /></span>
+										</div>
+
+									</div>
+									<div class="shang_info">
+										<p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<hr>
+			<h2 class="text-center" style="color:aliceblue" >留下你的建议 - 共铸数技新未来</h2>
+
+			<div class="container">
+				<div id="gitalk-container">
+					<div class="gt-container">
+						<div class="gt-meta">
+                            <span class="gt-counts">
+
+                                <span id="num"></span>
+
+
+                                条评论</span>
+
+						</div>
+						<div class="gt-header">
+							<div class="gt-header-comment">
+								<textarea id="userName" class="gt-header-textarea nickname" placeholder="昵称" style="overflow: hidden; word-wrap: break-word; resize: none;min-height: 3em;margin: 1em 0;width: 120px;height:12px"></textarea>
+								<textarea id="txt" class="gt-header-textarea textarea" placeholder="说点什么" style="overflow: hidden; word-wrap: break-word; resize: none; height: 72px;"></textarea>
+								<div class="gt-header-controls">
+									<button class="gt-btn gt-btn-public">
+										<span class="gt-btn-text">评论</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div id="bb-bookblock" class="bb-bookblock" style="z-index:inherit">
+
+
+						</div>
+						<nav class="bb-nav text-center">
+							<a id="bb-nav-first" href="#">
+								<i class="fa fa-step-backward" aria-hidden="true" style="
+								padding-left: 5px;
+							"></i>
+							</a>
+							<a id="bb-nav-prev" href="#">
+								<i class="fa fa-play fa-flip-horizontal " aria-hidden="true" style="
+								margin-right: 5px;
+								padding-right: 5px;
+							"></i>
+							</a>
+							<a id="bb-nav-next" href="#">
+								<i class="fa fa-play" aria-hidden="true" style="
+								margin-left: 10px;
+							"></i>
+							</a>
+							<a id="bb-nav-last" href="#">
+								<i class="fa fa-step-forward" aria-hidden="true" style="
+								padding-left: 2.5px;
+								padding-right: 2.5px;
+							"></i>
+							</a>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+
+			<hr>
+			<div class="copyright">
+				<p>Copyright &copy; 2018 广东工业大学 - 数字媒体技术 <br><a class="contactUs">@联系我们</a></p>
+			</div>
+
+			<div class="our-contacts slideanim">
+				<h3 class="text-center slideanim">联系我们</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<form role="form" action="../php/contact/server.php" method="POST">
+								<div class="row" style="color:black;">
+									<div class="form-group col-lg-6 slideanim">
+										<input type="text" class="form-control user-name" name="name" placeholder="你的名字"
+											   required />
+									</div>
+									<div class="form-group col-lg-6 slideanim">
+										<input type="email" class="form-control mail" name="email" placeholder="你的邮箱"
+											   required />
+									</div>
+									<div class="form-group col-lg-12 slideanim">
+										<input type="tel" class="form-control pno" name="subject" placeholder="标题"
+											   required />
+									</div>
+									<div class="clearfix"></div>
+									<div class="form-group col-lg-12 slideanim">
+                                        <textarea class="form-control" rows="6" name="message" 　placeholder="内容"
+												  required></textarea>
+									</div>
+									<!-- <input name="website" placeholder="lesson_1" style="display:none"> -->
+									<div class="form-group col-lg-12 slideanim">
+										<button type="submit" class="btn-outline1">提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ************************************** -->
+	<!-- **************右下角菜单*************** -->
+	<!-- ************************************** -->
+
+	<!-- /Footer Section -->
+	<!-- Back To Top -->
+	<nav id="gooey-upper" style="position:fixed;bottom:1rem;right:6.5rem;z-index: 11;">
+		<!-- <nav id="gooey-upper" style="position:fixed;bottom:10rem;right:15.5rem;"> -->
+		<input type="checkbox" class="menu-open" name="menu-open1" id="menu-open1" />
+		<label class="open-button" for="menu-open1" style="z-index:1">
+			<span class="burger burger-1"></span>
+			<span class="burger burger-2"></span>
+			<span class="burger burger-3"></span>
+		</label>
+
+		<a class="topBtn gooey-menu-item">
+			<i class="fa fa-chevron-up fa-2x"></i>
+		</a>
+
+		<a href="#h-spaced-menu" class="gooey-menu-item">
+			<div id="setPos_setting">
+				<div id="qutton_setting" class='qutton fa fa-cog fa-2x '>
+					<div class="qutton_dialog" id="settingDialog">
+						<div style="padding-top:1rem;">弹幕透明度</div>
+						<input name="opacity" placeholder="0 - 100" type="number" min="0" max="100" step="1" value="100"
+							   data-color="rgb(73, 138, 242)" class="srs">
+					</div>
+				</div>
+			</div>
+
+		</a>
+
+		<a class="gooey-menu-item">
+			<i id="danmuShow" class="fa fa-eye-slash fa-2x"></i>
+		</a>
+
+		<a class="gooey-menu-item">
+
+			<div id="setPos">
+				<div id="qutton_upload" class='qutton fa fa-keyboard-o fa-2x '>
+
+					<div class="qutton_dialog" id="uploadDialog">
+						<div class="urlField">
+							<input type="text" id="fileUrl" placeholder="Enter URL">
+							<select name="position" id="position">
+								<option value="0">滚动</option>
+								<option value="1">顶端</option>
+								<option value="2">底端</option>
+							</select>
+							<input id='colorpicker' class="awesome">
+							<button id="button_basic_upload"> 发弹幕</button>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</a>
+
+		<a class="bottomBtn gooey-menu-item">
+			<i class="fa fa-chevron-down fa-2x"></i>
+		</a>
+
+
+		<a class="gooey-menu-item">
+
+			<div class="ctaTile fa fa-link fa-2x" data-cta-target=".js-ctaModal-3" data-disable-scroll=true style="height: 0px"></div>
+		</a>
+
+	</nav>
+
+	<!-- 弹幕层 -->
+	<div id="danmu"></div>
+
+	<!-- 分享层 -->
+	<div class="js-ctaModal-3  ctaModal" style="padding:0px;overflow:hidden;z-index: 11">
+		<span class="ctaModal-close-btn fa fa-close fa-2x "></span>
+
+		<div class="canvas-wrap" style="height:100%;width:100%">
+
+			<div id="canvas" class="gradient"></div>
+			<div class="share-component" data-initialized="true" data-wechat-qrcode-helper="<p>扫一下二维码</p><p>便可将网站分享至朋友圈</p>">
+				<a href="#" class="social-share-icon icon-weibo"></a>
+				<a href="#" class="social-share-icon icon-qq"></a>
+				<a href="#" class="social-share-icon icon-qzone"></a>
+				<a href="#" class="social-share-icon icon-douban"></a>
+				<a href="#" class="social-share-icon icon-wechat"></a>
+				<a href="#" class="social-share-icon icon-google"></a>
+				<a href="#" class="social-share-icon icon-facebook"></a>
+				<a href="#" class="social-share-icon icon-twitter"></a>
+				<a href="#" class="social-share-icon icon-heart"></a>
+			</div>
+
+
+		</div>
+
+		<!-- 复制成功提示 -->
+		<div id="shareCopy" class="row clearfix" style="position:absolute;left:20%;top:0px;width: 60%;">
+			<div class="col-md-12 column">
+				<div class="alert alert-success alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<h5>
+						<div style="text-align:center;margin-left:6%;">
+							<strong>网页地址复制成功！</strong>
+						</div>
+					</h5>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
