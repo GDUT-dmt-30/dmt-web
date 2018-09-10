@@ -1541,7 +1541,7 @@ section.footer .footer-right ul.social-icons2 li a i.fa.fa-google-plus:hover {
 	background-color: #3f3f3f;
 	border-radius: 10px;
 	position: fixed;
-	z-index: 1000;
+	z-index: 9999;
 	left: 50%;
 	top: 50%;
 	margin-left: -280px;
@@ -1677,7 +1677,7 @@ section.footer .footer-right ul.social-icons2 li a i.fa.fa-google-plus:hover {
 	font-weight: 700;
 }
 
-#thanks{
+#thanks,#joinUs{
 	padding: 5px;
 	width: 30rem;
 	margin: auto;

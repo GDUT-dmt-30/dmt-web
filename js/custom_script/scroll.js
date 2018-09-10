@@ -47,7 +47,7 @@ $(document).ready(function () {
 
             $(this).children('div').css({ "padding-bottom": $(window).height() - $(this).children('div').height() - 100 });
 
-            $(this).children('div').css({ "padding-top": 200 });
+            $(this).children('div').css({ "padding-top": 100 });
         })
     }
 

@@ -11,6 +11,11 @@ $(document).ready(function () {
         $("#shang_pay_txt").text(dataid == "alipay" ? "支付宝" : "微信");
     });
     
+    $('#joinContent').hide();
+    $('#joinUs').click(function(){
+        $('#joinContent').slideToggle(500);
+    })
+    
 });
 function dashangToggle() {
 

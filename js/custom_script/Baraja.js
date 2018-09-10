@@ -92,7 +92,7 @@ $(function() {
         baraja_click = false;
         $(".baraja-container").velocity(
           {
-            "margin-bottom": "20rem"
+            "margin-bottom": "25rem"
           },
           300,
           "swing"
@@ -114,7 +114,7 @@ $(function() {
       baraja_click = false;
       $(".baraja-container").velocity(
         {
-          "margin-bottom": "20rem"
+          "margin-bottom": "25rem"
         },
         300,
         "swing"
